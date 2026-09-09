@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.2%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.3%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -64,6 +64,7 @@ AutoCast solves this by treating prompts, judges, workflows, security gates, and
 | Security | Apply OWASP, NIST SSDF, CIS Controls, DevSecOps, and supply-chain gates |
 | Evals | Measure whether routing, judges, and security decisions are improving |
 | Adapters | Bring the same standard to OpenCode, Claude Code, and Cursor |
+| Runner | Optional local CLI for routing, eval scoring, and evidence setup |
 
 ## Framework Architecture
 
@@ -175,6 +176,18 @@ autocast/security/security-baseline.md
 6. Run the selected workflow.
 7. Run the required judges.
 8. Record evidence before considering the task complete.
+
+## Local Runner
+
+AutoCast v0.3 includes an optional dependency-free local runner.
+
+```bash
+node bin/autocast.mjs route --task "Add password reset to the app"
+node bin/autocast.mjs eval --strict
+node bin/autocast.mjs report --out .autocast/reports/route-selection-report.md
+```
+
+The runner does not replace your coding agent. It measures and automates control-plane behavior: route selection, eval scoring, and evidence setup.
 
 ## Use It Inside Your Dev Flow
 
@@ -310,6 +323,11 @@ AutoCast/
 | Document | Purpose |
 |---|---|
 | `CHANGELOG.md` | Version history and unreleased changes |
+| `docs/CLI.md` | Local runner usage |
+| `docs/EVALS.md` | Eval format, metrics, and targets |
+| `docs/EVIDENCE.md` | Evidence templates and local evidence workflow |
+| `docs/INSTALL.md` | Installation options |
+| `docs/VERSIONING.md` | Version milestones and merge policy |
 | `MANUAL.md` | How to operate and customize AutoCast |
 | `ROADMAP.md` | Version direction and maturity targets |
 | `SECURITY.md` | Security policy and sensitive-area rules |
@@ -334,9 +352,9 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.2` candidate on the adapter-enforcement track.
+Current status: `v0.3` candidate on the measurable-harness track.
 
-Near target: `v0.3` measurable local harness.
+Near target: validated `v0.3` measurable local harness.
 
 The v0.3 plan focuses on:
 

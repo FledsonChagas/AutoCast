@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FledsonChagas/AutoCast/schemas/route-decision.schema.json",
+  "title": "AutoCast Route Decision",
+  "type": "object",
+  "required": ["route", "risk", "taskType", "requiredAgents", "requiredJudges", "securityGates", "reasons"],
+  "properties": {
+    "route": {
+      "type": "string",
+      "enum": ["fast-lane", "standard", "secure-change", "critical-change", "review-only"]
+    },
+    "risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "taskType": {
+      "type": "string",
+      "enum": ["feature", "bugfix", "refactor", "review", "tests", "security", "architecture"]
+    },
+    "requiredAgents": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requiredJudges": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "securityGates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

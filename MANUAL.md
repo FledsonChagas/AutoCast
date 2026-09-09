@@ -111,6 +111,18 @@ Use `roadmap/market-fit.md` to guide product direction and avoid turning AutoCas
 
 Use `ROADMAP.md` and `roadmap/v0.3-development-plan.md` to follow the path from prompt-pack to measurable local harness.
 
+## Local Runner
+
+AutoCast v0.3 includes an optional local runner. See `docs/CLI.md`.
+
+Common commands:
+
+```bash
+node bin/autocast.mjs init
+node bin/autocast.mjs route --task "Add password reset"
+node bin/autocast.mjs eval --strict
+```
+
 ## Tool-Specific Notes
 
 OpenCode:
