@@ -1,0 +1,87 @@
+name: AutoCast
+version: 0.1.0
+
+defaults:
+  language: auto
+  ai_tools:
+    - opencode
+    - claude-code
+    - cursor
+  evidence_required: true
+  judges_required:
+    fast-lane:
+      - judge-correctness
+    standard:
+      - judge-correctness
+      - judge-tests
+    secure-change:
+      - judge-correctness
+      - judge-tests
+      - judge-security
+    critical-change:
+      - judge-correctness
+      - judge-tests
+      - judge-security
+      - reviewer
+
+routing:
+  default_route: standard
+  critical_keywords:
+    - auth
+    - authentication
+    - authorization
+    - permissions
+    - payment
+    - billing
+    - production data
+    - encryption
+    - cryptography
+    - token
+    - secret
+    - infrastructure
+    - ci/cd
+    - compliance
+  security_keywords:
+    - owasp
+    - nist
+    - cis
+    - vulnerability
+    - dependency
+    - input validation
+    - xss
+    - csrf
+    - injection
+    - ssrf
+    - deserialization
+
+thresholds:
+  correctness_min: 4
+  test_quality_min: 3
+  security_min: 4
+  maintainability_min: 3
+
+stop_conditions:
+  block_on_secret_exposure: true
+  block_on_security_high: true
+  block_on_failing_required_tests: true
+  block_on_unclear_scope: true
+
+runtime_controls:
+  max_turns_default: 25
+  require_evidence_log: true
+  require_loop_detection: true
+  ask_before_destructive_shell: true
+  ask_before_network_upload: true
+  ask_before_dependency_install: true
+
+context_policy:
+  response_reserve_required: true
+  mark_external_content_untrusted: true
+  prefer_diffs_for_judges: true
+  never_include_secrets: true
+
+eval_targets:
+  route_accuracy_min: 0.90
+  critical_escalation_recall_min: 0.95
+  security_high_risk_detection_min: 0.90
+  correctness_blocker_detection_min: 0.80

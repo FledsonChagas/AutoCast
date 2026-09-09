@@ -1,0 +1,30 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs and traces
+*.log
+traces/runs/
+traces/decisions/
+traces/failures/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Runtime artifacts
+node_modules/
+dist/
+build/
+.cache/
+coverage/
+__pycache__/
+*.pyc
+
+# AutoCast local output
+.autocast/
+autocast.local.yml
+preview/

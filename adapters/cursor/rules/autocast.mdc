@@ -1,0 +1,13 @@
+---
+description: AutoCast harness rules for Cursor-assisted development
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# AutoCast Cursor Rule
+
+Before coding, classify the task using AutoCast intake and routing.
+
+Use the smallest correct change. Preserve existing project patterns. Do not add dependencies or widen permissions without justification. Apply the security baseline to every change.
+
+For sensitive changes, require security review before completion.
