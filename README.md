@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.7%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.8%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -364,6 +364,9 @@ AutoCast/
 | `SECURITY_PROFILE_CHECKLIST.md` / `SECURITY_PROFILE_CHECKLIST.pt-BR.md` | Security profile checklist |
 | `CRITICAL_CHANGE_THREAT_MODEL.md` / `CRITICAL_CHANGE_THREAT_MODEL.pt-BR.md` | Critical-change threat model pack |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Adoption guide |
+| `ADOPTION_EVIDENCE.md` / `ADOPTION_EVIDENCE.pt-BR.md` | Adoption evidence policy |
+| `ADOPTION_METRICS.md` / `ADOPTION_METRICS.pt-BR.md` | Adoption measurement metrics |
+| `PILOT_GUIDE.md` / `PILOT_GUIDE.pt-BR.md` | Pilot guide for real-world adoption |
 | `EVALUATION.md` / `EVALUATION.pt-BR.md` | Evaluation methodology |
 | `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | With/without AutoCast benchmark protocol |
 | `JUDGE_CALIBRATION.md` / `JUDGE_CALIBRATION.pt-BR.md` | Judge calibration guide |
@@ -405,18 +408,18 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.7` candidate on the reference-adapters track.
+Current status: `v0.8` candidate on the adoption-evidence track.
 
-Near target: clearer official adapters without turning AutoCast into a mandatory installer.
+Near target: adoption evidence methodology, pilot guidance, and realistic case study samples.
 
-The v0.7 plan focuses on:
+The v0.8 plan focuses on:
 
-- Adapter conformance levels.
-- Adapter limitations matrix.
-- Official profile references for adapters.
-- Official invocation prompts by profile.
-- Reference setup docs for OpenCode, Claude Code, and Cursor.
-- Adapter conformance eval calibration.
+- Adoption evidence policy.
+- Adoption metrics.
+- Pilot guide.
+- Case study templates.
+- Realistic sample case studies.
+- Adoption evidence eval calibration.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 

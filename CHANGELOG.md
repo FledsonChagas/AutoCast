@@ -1,6 +1,24 @@
 # Changelog
 
-## v0.7.0 - Unreleased
+## v0.8.0 - Unreleased
+
+### Added
+
+- Adoption evidence methodology in English and Portuguese.
+- Adoption metrics in English and Portuguese.
+- Pilot guide in English and Portuguese.
+- Case study templates in English and Portuguese.
+- Three realistic sample case studies for individual developer, small team, and consultancy adoption.
+- v0.8 adoption evidence route calibration eval suite.
+- v0.8 adoption evidence benchmark report.
+- npm script for adoption evidence evals.
+
+### Changed
+
+- Config now targets v0.8.0 and includes the v0.8 adoption evidence eval suite.
+- README and roadmap now describe v0.8 as the adoption evidence milestone.
+
+## v0.7.0 - 2026-09-09
 
 ### Added
 

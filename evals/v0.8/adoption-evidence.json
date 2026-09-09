@@ -1,0 +1,11 @@
+{
+  "name": "AutoCast v0.8 Adoption Evidence Route Calibration",
+  "version": "0.8.0",
+  "cases": [
+    { "id": "V08-AE-001", "input": "Measure AutoCast adoption for a docs-only README task.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only adoption evidence task." },
+    { "id": "V08-AE-002", "input": "Run an AutoCast pilot for adding dashboard pagination.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Normal feature pilot." },
+    { "id": "V08-AE-003", "input": "Run an AutoCast pilot for password reset rate limiting.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Authentication-sensitive pilot." },
+    { "id": "V08-AE-004", "input": "Compare AutoCast secure profile on public file upload validation.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "File upload and external input." },
+    { "id": "V08-AE-005", "input": "Review adoption evidence report without editing files.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Review-only evidence task." }
+  ]
+}

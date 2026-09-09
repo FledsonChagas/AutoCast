@@ -35,5 +35,8 @@ jobs:
       - name: Adapter conformance evals
         run: npm run eval:adapter-conformance
 
+      - name: Adoption evidence evals
+        run: npm run eval:adoption-evidence
+
       - name: Runner syntax
         run: node --check bin/autocast.mjs

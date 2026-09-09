@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.6` into the `v0.7` reference-adapters track.
+AutoCast is currently moving from `v0.7` into the `v0.8` adoption-evidence track.
 
-The next target is `v0.7`: clearer official adapters as framework-standard reference mappings.
+The next target is `v0.8`: adoption evidence methodology, pilot guidance, and realistic case study samples.
 
 ## Direction
 
@@ -32,6 +32,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.5` | Conformance and evaluation | Checklist, evaluation methodology, benchmark protocol, judge calibration, false-positive/negative evals |
 | `v0.6` | Security assurance | Assurance model, profile checklist, critical threat model, standards crosswalk, evidence examples |
 | `v0.7` | Reference adapters | Adapter conformance, limitations matrix, profile references, invocation prompts, setup docs |
+| `v0.8` | Adoption evidence | Evidence policy, adoption metrics, pilot guide, case study templates, realistic samples |
 
 ## v0.2 Goals
 
@@ -88,6 +89,16 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add official invocation prompts by profile.
 - Add reference setup docs for OpenCode, Claude Code, and Cursor.
 - Add adapter conformance calibration evals.
+
+## v0.8 Goals
+
+- Define adoption evidence policy.
+- Define adoption metrics.
+- Add pilot guide.
+- Add case study templates.
+- Add realistic sample case studies.
+- Add adoption evidence calibration evals.
+- Avoid external proof claims until real pilots exist.
 
 ## Success Metrics
 
