@@ -78,8 +78,14 @@ function firstMatch(patterns, text) {
 
 function isReviewOnly(text) {
   const wantsReview = /\b(review|diagnose|diagnosis|analyze|analyse|plan|planning|brainstorm|compare)\b/.test(text);
-  const blocksEdits = /\b(do not edit|no edits|without edits|no code changes|do not change|review only|diagnose only)\b/.test(text);
+  const blocksEdits = /\b(do not edit|no edits|without edits|no code changes|do not change|without changing files|review only|diagnose only)\b/.test(text);
   return wantsReview && blocksEdits;
+}
+
+function isDocsOnly(text) {
+  const docsSignal = /\b(readme|docs|documentation|documentation page|install instructions)\b/.test(text);
+  const lowRiskChange = /\b(docs only|documentation only|docs-only|typo|spelling|wording)\b/.test(text);
+  return docsSignal && lowRiskChange;
 }
 
 function taskType(text) {
@@ -116,6 +122,9 @@ function classifyRoute(input) {
   if (isReviewOnly(text)) {
     route = 'review-only';
     reasons.push('user requested review/diagnosis/planning without edits');
+  } else if (isDocsOnly(text)) {
+    route = 'fast-lane';
+    reasons.push('documentation-only');
   } else if (criticalReason) {
     route = 'critical-change';
     reasons.push(criticalReason);

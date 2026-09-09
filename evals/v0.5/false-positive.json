@@ -1,0 +1,16 @@
+{
+  "name": "AutoCast v0.5 False Positive Route Calibration",
+  "version": "0.5.0",
+  "cases": [
+    { "id": "V05-FP-001", "input": "Fix a typo in README install instructions.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only typo should not escalate." },
+    { "id": "V05-FP-002", "input": "Change button label from Continue to Next.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Local copy change." },
+    { "id": "V05-FP-003", "input": "Add integration tests for the search filter.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Integration test wording should not be confused with external integration." },
+    { "id": "V05-FP-004", "input": "Refactor local date formatting helper without behavior changes.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Normal refactor." },
+    { "id": "V05-FP-005", "input": "Add a loading skeleton to reports page cards.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Normal UI feature." },
+    { "id": "V05-FP-006", "input": "Review this PR only; do not edit code.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Review-only intent." },
+    { "id": "V05-FP-007", "input": "Update documentation for secure profile examples.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Security word in docs should not force secure-change." },
+    { "id": "V05-FP-008", "input": "Add unit tests for a string tokenizer parser.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Parser tokenization should not be confused with auth token security." },
+    { "id": "V05-FP-009", "input": "Plan a dashboard refactor without changing files.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Planning without edits." },
+    { "id": "V05-FP-010", "input": "Improve wording in the payment documentation page, docs only.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only payment wording should not escalate as payment behavior." }
+  ]
+}

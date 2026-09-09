@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.3` into the `v0.4` framework-specification track.
+AutoCast is currently moving from `v0.4` into the `v0.5` conformance-and-evaluation track.
 
-The next target is `v0.4`: a formal, bilingual framework standard and development methodology.
+The next target is `v0.5`: measurable conformance and evaluation without mandatory tooling.
 
 ## Direction
 
@@ -29,6 +29,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.2` | Adapter enforcement | Strong OpenCode, Claude Code, Cursor installation paths, examples, and eval expansion |
 | `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, schemas, and optional local runner |
 | `v0.4` | Framework specification | Formal spec, methodology, conformance, profiles, adoption docs, bilingual core |
+| `v0.5` | Conformance and evaluation | Checklist, evaluation methodology, benchmark protocol, judge calibration, false-positive/negative evals |
 
 ## v0.2 Goals
 
@@ -56,6 +57,16 @@ It should avoid becoming an unfocused generic runtime too early.
 - Define secure-by-default profiles with user-selectable rigor.
 - Make OpenCode, Claude Code, and Cursor official adapters.
 - Mirror core documentation in English and Portuguese.
+
+## v0.5 Goals
+
+- Add conformance checklist in English and Portuguese.
+- Add evaluation methodology in English and Portuguese.
+- Add with/without AutoCast benchmark protocol.
+- Add judge calibration guidance.
+- Add route decision examples.
+- Add false-positive and false-negative eval suites.
+- Add optional CI template for reference checks.
 
 ## Success Metrics
 
