@@ -1,12 +1,12 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.2` into the `v0.3` measurable-harness track.
+AutoCast is currently moving from `v0.3` into the `v0.4` framework-specification track.
 
-The next target is `v0.3`: a measurable, adapter-ready local harness that can establish AutoCast as a practical market standard.
+The next target is `v0.4`: a formal, bilingual framework standard and development methodology.
 
 ## Direction
 
-AutoCast should become the SDLC control-plane for coding agents.
+AutoCast should become the security-first SDLC framework standard for coding agents.
 
 It should focus on:
 
@@ -17,6 +17,7 @@ It should focus on:
 - Evidence collection.
 - Tool-specific adapters.
 - Eval-backed claims.
+- Bilingual framework documentation.
 
 It should avoid becoming an unfocused generic runtime too early.
 
@@ -27,6 +28,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.1` | Harness standard | Markdown workflows, agents, judges, security baseline |
 | `v0.2` | Adapter enforcement | Strong OpenCode, Claude Code, Cursor installation paths, examples, and eval expansion |
 | `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, schemas, and optional local runner |
+| `v0.4` | Framework specification | Formal spec, methodology, conformance, profiles, adoption docs, bilingual core |
 
 ## v0.2 Goals
 
@@ -46,6 +48,15 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add mature adapter packs for OpenCode, Claude Code, and Cursor.
 - Publish benchmark results against known failure patterns.
 
+## v0.4 Goals
+
+- Define AutoCast as framework standard and methodology.
+- Clarify CLI as optional reference tooling.
+- Define conformance levels from L0 to L5.
+- Define secure-by-default profiles with user-selectable rigor.
+- Make OpenCode, Claude Code, and Cursor official adapters.
+- Mirror core documentation in English and Portuguese.
+
 ## Success Metrics
 
 - Route selection accuracy: 90% or higher.
@@ -58,3 +69,5 @@ It should avoid becoming an unfocused generic runtime too early.
 ## Detailed Plan
 
 See `roadmap/v0.3-development-plan.md`.
+
+For the current post-v0.3 plan, see `roadmap/post-v0.3-market-hardening.md`.

@@ -14,6 +14,10 @@ Adapter enforcement, examples, permission classifier prompt, evidence templates,
 
 Measurable local harness with optional runner, structured evals, schemas, scoring, and local evidence reports.
 
+## v0.4
+
+Framework specification, methodology, conformance levels, secure-by-default profiles, official adapters, reference implementation positioning, manifesto, and bilingual core documentation.
+
 ## Merge Policy
 
 Each release milestone should be developed in a branch and merged through PR approval.

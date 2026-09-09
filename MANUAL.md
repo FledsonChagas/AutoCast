@@ -2,6 +2,14 @@
 
 This manual explains how to use and customize AutoCast.
 
+For the formal framework standard, start with `SPEC.md` or `SPEC.pt-BR.md`.
+
+For methodology, start with `METHODOLOGY.md` or `METHODOLOGY.pt-BR.md`.
+
+For conformance levels, use `CONFORMANCE.md` or `CONFORMANCE.pt-BR.md`.
+
+For security profiles, use `PROFILES.md` or `PROFILES.pt-BR.md`.
+
 ## When To Use
 
 Use AutoCast for software work assisted by AI:
@@ -114,6 +122,8 @@ Use `ROADMAP.md` and `roadmap/v0.3-development-plan.md` to follow the path from 
 ## Local Runner
 
 AutoCast v0.3 includes an optional local runner. See `docs/CLI.md`.
+
+The runner is a reference validator. It is not required for AutoCast conformance.
 
 Common commands:
 
