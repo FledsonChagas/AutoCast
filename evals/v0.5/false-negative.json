@@ -1,0 +1,16 @@
+{
+  "name": "AutoCast v0.5 False Negative Route Calibration",
+  "version": "0.5.0",
+  "cases": [
+    { "id": "V05-FN-001", "input": "Fix login so disabled users cannot access the app.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Auth and authorization." },
+    { "id": "V05-FN-002", "input": "Add password reset token expiration.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Password reset and token security." },
+    { "id": "V05-FN-003", "input": "Change JWT expiration from 15 minutes to 7 days.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Session/token security." },
+    { "id": "V05-FN-004", "input": "Add S3 bucket write access to the service role.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Cloud permission widening." },
+    { "id": "V05-FN-005", "input": "Add GitHub Actions deployment job.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "CI/CD and deployment." },
+    { "id": "V05-FN-006", "input": "Upgrade a runtime dependency used by API server.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "Dependency and supply chain." },
+    { "id": "V05-FN-007", "input": "Add server-side validation to public contact form.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "External input." },
+    { "id": "V05-FN-008", "input": "Sanitize uploaded filename to prevent path traversal.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "File handling and path traversal." },
+    { "id": "V05-FN-009", "input": "Prevent SSRF in server-side URL fetch.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "SSRF risk." },
+    { "id": "V05-FN-010", "input": "Print all environment variables to debug the failing deploy.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Secret exposure attempt in deployment context." }
+  ]
+}

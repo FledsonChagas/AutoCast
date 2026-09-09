@@ -7,7 +7,7 @@
 Torne agentes de código com IA previsíveis, seguros, revisáveis e repetíveis.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.4%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.5%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#suporte-a-ferramentas)
 
@@ -236,8 +236,13 @@ Comece por `SECURITY.md`, `PROFILES.pt-BR.md`, `security/security-baseline.md`, 
 | `SPEC.md` / `SPEC.pt-BR.md` | Especificação do framework standard AutoCast |
 | `METHODOLOGY.md` / `METHODOLOGY.pt-BR.md` | Metodologia de desenvolvimento |
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | Modelo de conformidade L0-L5 |
+| `CONFORMANCE_CHECKLIST.md` / `CONFORMANCE_CHECKLIST.pt-BR.md` | Checklist de conformidade legível por humanos |
 | `PROFILES.md` / `PROFILES.pt-BR.md` | Perfis secure-by-default |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Guia de adoção |
+| `EVALUATION.md` / `EVALUATION.pt-BR.md` | Metodologia de avaliação |
+| `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | Protocolo de benchmark com/sem AutoCast |
+| `JUDGE_CALIBRATION.md` / `JUDGE_CALIBRATION.pt-BR.md` | Guia de calibragem de juízes |
+| `ROUTE_EXAMPLES.md` / `ROUTE_EXAMPLES.pt-BR.md` | Exemplos de decisão de rota |
 | `REFERENCE_IMPLEMENTATION.md` / `REFERENCE_IMPLEMENTATION.pt-BR.md` | Tooling opcional e CLI como validador de referência |
 | `ADAPTERS.md` / `ADAPTERS.pt-BR.md` | Padrão oficial de adapters |
 | `MANIFESTO.md` / `MANIFESTO.pt-BR.md` | Filosofia AutoCast |
@@ -254,7 +259,7 @@ AutoCast mira definir esse padrão.
 
 ## Status
 
-AutoCast está em evolução. Na `v0.4`, o foco é formalizar o framework standard, a metodologia, os níveis de conformidade, os perfis de segurança e a documentação bilíngue.
+AutoCast está em evolução. Na `v0.5`, o foco é tornar conformidade e avaliação mensuráveis sem tornar a CLI obrigatória.
 
 ## Licença
 

@@ -17,15 +17,15 @@ The goal is not bureaucracy. The goal is shared language and measurable adoption
 
 ## Current AutoCast Repository Maturity
 
-AutoCast v0.4 candidate is approximately:
+AutoCast v0.5 candidate is approximately:
 
 ```txt
-L2: AutoCast Compliant
+L3: AutoCast Secure
 ```
 
-It has route definitions, workflows, judges, evidence templates, security baseline, official adapters, framework specification documents, profiles, and initial evals.
+It has route definitions, workflows, judges, evidence templates, security baseline, official adapters, framework specification documents, profiles, conformance checklists, and initial eval suites.
 
-It is not yet L4/L5 because external validation, broad real-world adoption evidence, and independent certification do not exist yet.
+It has partial L4 signals because route and false-positive/false-negative evals exist, but it is not yet fully L4/L5 because external validation, broad real-world adoption evidence, judge automation, and independent certification do not exist yet.
 
 ## Minimum L2 Requirements
 

@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.4%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.5%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -305,10 +305,20 @@ AutoCast/
   METHODOLOGY.pt-BR.md
   CONFORMANCE.md
   CONFORMANCE.pt-BR.md
+  CONFORMANCE_CHECKLIST.md
+  CONFORMANCE_CHECKLIST.pt-BR.md
   PROFILES.md
   PROFILES.pt-BR.md
   ADOPTION.md
   ADOPTION.pt-BR.md
+  EVALUATION.md
+  EVALUATION.pt-BR.md
+  BENCHMARK_PROTOCOL.md
+  BENCHMARK_PROTOCOL.pt-BR.md
+  JUDGE_CALIBRATION.md
+  JUDGE_CALIBRATION.pt-BR.md
+  ROUTE_EXAMPLES.md
+  ROUTE_EXAMPLES.pt-BR.md
   REFERENCE_IMPLEMENTATION.md
   REFERENCE_IMPLEMENTATION.pt-BR.md
   ADAPTERS.md
@@ -344,8 +354,13 @@ AutoCast/
 | `SPEC.md` / `SPEC.pt-BR.md` | AutoCast framework standard specification |
 | `METHODOLOGY.md` / `METHODOLOGY.pt-BR.md` | Development methodology |
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | L0-L5 conformance model |
+| `CONFORMANCE_CHECKLIST.md` / `CONFORMANCE_CHECKLIST.pt-BR.md` | Human-readable conformance checklist |
 | `PROFILES.md` / `PROFILES.pt-BR.md` | Secure-by-default profiles |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Adoption guide |
+| `EVALUATION.md` / `EVALUATION.pt-BR.md` | Evaluation methodology |
+| `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | With/without AutoCast benchmark protocol |
+| `JUDGE_CALIBRATION.md` / `JUDGE_CALIBRATION.pt-BR.md` | Judge calibration guide |
+| `ROUTE_EXAMPLES.md` / `ROUTE_EXAMPLES.pt-BR.md` | Route decision examples |
 | `REFERENCE_IMPLEMENTATION.md` / `REFERENCE_IMPLEMENTATION.pt-BR.md` | Optional tooling and reference validator positioning |
 | `ADAPTERS.md` / `ADAPTERS.pt-BR.md` | Official adapter standard |
 | `MANIFESTO.md` / `MANIFESTO.pt-BR.md` | AutoCast philosophy |
@@ -381,19 +396,18 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.4` candidate on the framework-specification track.
+Current status: `v0.5` candidate on the conformance-and-evaluation track.
 
-Near target: formal, bilingual framework standard and methodology.
+Near target: measurable conformance and evaluation without mandatory tooling.
 
-The v0.4 plan focuses on:
+The v0.5 plan focuses on:
 
-- Framework specification.
-- Development methodology.
-- Conformance levels.
-- Secure-by-default profiles with user-selected rigor.
-- Official adapters for OpenCode, Claude Code, and Cursor.
-- Bilingual documentation.
-- CLI positioning as optional reference tooling.
+- Conformance checklist.
+- Evaluation methodology.
+- False-positive and false-negative eval suites.
+- Judge calibration guidance.
+- With/without AutoCast benchmark protocol.
+- Optional CI template for reference checks.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 

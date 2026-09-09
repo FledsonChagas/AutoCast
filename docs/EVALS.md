@@ -4,7 +4,11 @@ AutoCast evals measure whether the harness chooses the right route, escalates se
 
 ## v0.3 Eval Format
 
-Structured evals live in `evals/v0.3/route-selection.json`.
+Structured evals live in:
+
+- `evals/v0.3/route-selection.json`
+- `evals/v0.5/false-positive.json`
+- `evals/v0.5/false-negative.json`
 
 Schema:
 
@@ -39,6 +43,8 @@ Each case includes:
 ```bash
 node bin/autocast.mjs eval --strict
 npm run eval:strict
+npm run eval:false-positive
+npm run eval:false-negative
 ```
 
 ## Interpretation

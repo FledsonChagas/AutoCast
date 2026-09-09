@@ -1,5 +1,5 @@
 name: AutoCast
-version: 0.4.0
+version: 0.5.0
 
 defaults:
   language: auto
@@ -123,4 +123,7 @@ eval_targets:
 runner:
   optional: true
   default_eval_suite: evals/v0.3/route-selection.json
+  supplemental_eval_suites:
+    - evals/v0.5/false-positive.json
+    - evals/v0.5/false-negative.json
   local_evidence_dir: .autocast

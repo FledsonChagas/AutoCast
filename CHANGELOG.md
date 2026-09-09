@@ -1,6 +1,24 @@
 # Changelog
 
-## v0.4.0 - Unreleased
+## v0.5.0 - Unreleased
+
+### Added
+
+- Conformance checklist in English and Portuguese.
+- Evaluation methodology in English and Portuguese.
+- With/without AutoCast benchmark protocol in English and Portuguese.
+- Judge calibration guide in English and Portuguese.
+- Route decision examples in English and Portuguese.
+- False-positive and false-negative route calibration eval suites.
+- Optional CI template for AutoCast reference checks.
+- npm scripts for v0.5 false-positive and false-negative evals.
+
+### Changed
+
+- Improved reference router handling for documentation-only changes and review-only wording.
+- Config now targets v0.5.0 and lists supplemental v0.5 eval suites.
+
+## v0.4.0 - 2026-09-09
 
 ### Added
 
