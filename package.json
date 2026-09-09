@@ -1,7 +1,7 @@
 {
   "name": "autocast-harness",
-  "version": "0.3.0",
-  "description": "AI SDLC harness framework for predictable, secure, and reviewable AI-assisted software delivery.",
+  "version": "0.4.0",
+  "description": "Framework standard and methodology for predictable, secure, and reviewable AI-assisted software delivery.",
   "type": "module",
   "bin": {
     "autocast": "./bin/autocast.mjs"
@@ -20,6 +20,8 @@
     "agentic-coding",
     "harness",
     "harness-engineering",
+    "framework-standard",
+    "methodology",
     "sdlc",
     "devsecops",
     "opencode",

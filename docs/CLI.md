@@ -1,8 +1,10 @@
-# AutoCast CLI
+# AutoCast CLI Reference
 
-AutoCast v0.3 introduces an optional local runner.
+AutoCast includes an optional local runner as a reference validator.
 
-The runner does not replace OpenCode, Claude Code, Cursor, or another coding agent. It provides measurable glue for intake, route selection, eval scoring, and evidence generation.
+The runner does not replace OpenCode, Claude Code, Cursor, or another coding agent. It provides measurable glue for route selection, eval scoring, and evidence generation.
+
+The CLI is not required for AutoCast conformance. AutoCast is a framework standard and methodology first.
 
 ## Requirements
 

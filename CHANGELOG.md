@@ -1,6 +1,27 @@
 # Changelog
 
-## v0.3.0 - Unreleased
+## v0.4.0 - Unreleased
+
+### Added
+
+- Framework specification documents in English and Portuguese.
+- AutoCast methodology documents in English and Portuguese.
+- Conformance levels from L0 to L5.
+- Secure-by-default profiles with user-selectable rigor.
+- Adoption guides for individuals, small teams, consultancies, and companies.
+- Official adapter standard for OpenCode, Claude Code, and Cursor.
+- Reference implementation documents clarifying that the CLI is optional tooling.
+- Manifesto documents with a soft, non-dogmatic product philosophy.
+- Portuguese README mirror.
+- Post-v0.3 roadmap reframed around framework standard maturity.
+
+### Changed
+
+- Reframed AutoCast as a framework standard and development methodology first.
+- Repositioned the CLI as a reference validator, not the center of the product.
+- Revised competitive benchmark language to avoid treating install/doctor/uninstall as mandatory core requirements.
+
+## v0.3.0 - 2026-09-09
 
 ### Added
 

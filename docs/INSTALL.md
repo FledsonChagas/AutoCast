@@ -1,6 +1,6 @@
 # AutoCast Installation
 
-AutoCast can be used as documentation-only framework, a project harness, or a measurable local runner.
+AutoCast can be used as a framework standard, a project harness, or with optional reference tooling.
 
 ## Option 1: Project Folder
 
@@ -15,7 +15,7 @@ git submodule add https://github.com/FledsonChagas/AutoCast.git autocast
 git submodule update --init --recursive
 ```
 
-## Option 3: Local Runner
+## Option 3: Optional Reference Runner
 
 From the AutoCast directory:
 
@@ -24,6 +24,8 @@ node bin/autocast.mjs init
 node bin/autocast.mjs route --task "Add password reset"
 node bin/autocast.mjs eval --strict
 ```
+
+The runner is optional. It validates reference behavior but is not required to adopt AutoCast.
 
 ## Tool Adapters
 

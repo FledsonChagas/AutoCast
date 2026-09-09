@@ -1,28 +1,61 @@
 name: AutoCast
-version: 0.3.0
+version: 0.4.0
 
 defaults:
   language: auto
+  profile: standard
+  conformance_target: L2
   ai_tools:
     - opencode
     - claude-code
     - cursor
   evidence_required: true
-  judges_required:
-    fast-lane:
-      - judge-correctness
-    standard:
-      - judge-correctness
-      - judge-tests
-    secure-change:
-      - judge-correctness
-      - judge-tests
-      - judge-security
-    critical-change:
-      - judge-correctness
-      - judge-tests
-      - judge-security
-      - reviewer
+
+framework:
+  type: framework-standard
+  methodology_first: true
+  cli_required_for_conformance: false
+  official_adapters:
+    - opencode
+    - claude-code
+    - cursor
+
+profiles:
+  default: standard
+  available:
+    - minimal
+    - standard
+    - secure
+    - critical
+
+conformance:
+  levels:
+    - L0 Prompt Pack
+    - L1 AutoCast Structured
+    - L2 AutoCast Compliant
+    - L3 AutoCast Secure
+    - L4 AutoCast Verified
+    - L5 AutoCast Certified
+
+security:
+  secure_by_default: true
+  user_selects_rigor: true
+
+judges_required:
+  fast-lane:
+    - judge-correctness
+  standard:
+    - judge-correctness
+    - judge-tests
+  secure-change:
+    - judge-correctness
+    - judge-tests
+    - judge-security
+  critical-change:
+    - judge-correctness
+    - judge-tests
+    - judge-security
+    - reviewer
 
 routing:
   default_route: standard

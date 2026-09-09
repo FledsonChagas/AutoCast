@@ -2,22 +2,24 @@
 
 # AutoCast
 
-### The AI SDLC Harness Framework
+### The AI SDLC Framework Standard
 
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.3%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.4%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
-**Open source | Apache-2.0 | security-first | tool-agnostic | built for agentic coding**
+**Open source | Apache-2.0 | framework standard | methodology | security-first | tool-agnostic**
+
+[Portuguese (Brazil)](README.pt-BR.md)
 
 </div>
 
 ## What Is AutoCast?
 
-AutoCast is a portable framework for running AI-assisted software development through a controlled harness.
+AutoCast is a portable framework standard and development methodology for running AI-assisted software delivery through a controlled harness.
 
 It wraps tools like OpenCode, Claude Code, Cursor, and similar coding agents with a repeatable SDLC standard:
 
@@ -64,7 +66,7 @@ AutoCast solves this by treating prompts, judges, workflows, security gates, and
 | Security | Apply OWASP, NIST SSDF, CIS Controls, DevSecOps, and supply-chain gates |
 | Evals | Measure whether routing, judges, and security decisions are improving |
 | Adapters | Bring the same standard to OpenCode, Claude Code, and Cursor |
-| Runner | Optional local CLI for routing, eval scoring, and evidence setup |
+| Reference Tooling | Optional local CLI for routing, eval scoring, and evidence setup |
 
 ## Framework Architecture
 
@@ -97,7 +99,7 @@ AutoCast solves this by treating prompts, judges, workflows, security gates, and
               evidence record
 ```
 
-AutoCast is currently a control-plane framework, not a full runtime. It is designed to sit on top of existing coding agents instead of replacing them.
+AutoCast is a framework standard first. It is not a full runtime and does not replace existing coding agents.
 
 ## Routes
 
@@ -177,9 +179,9 @@ autocast/security/security-baseline.md
 7. Run the required judges.
 8. Record evidence before considering the task complete.
 
-## Local Runner
+## Reference Tooling
 
-AutoCast v0.3 includes an optional dependency-free local runner.
+AutoCast includes an optional dependency-free local runner as a reference validator.
 
 ```bash
 node bin/autocast.mjs route --task "Add password reset to the app"
@@ -187,7 +189,7 @@ node bin/autocast.mjs eval --strict
 node bin/autocast.mjs report --out .autocast/reports/route-selection-report.md
 ```
 
-The runner does not replace your coding agent. It measures and automates control-plane behavior: route selection, eval scoring, and evidence setup.
+The runner does not replace your coding agent and is not required for conformance. It measures and automates reference behavior: route selection, eval scoring, and evidence setup.
 
 ## Use It Inside Your Dev Flow
 
@@ -296,6 +298,23 @@ Required controls:
 ```txt
 AutoCast/
   README.md
+  README.pt-BR.md
+  SPEC.md
+  SPEC.pt-BR.md
+  METHODOLOGY.md
+  METHODOLOGY.pt-BR.md
+  CONFORMANCE.md
+  CONFORMANCE.pt-BR.md
+  PROFILES.md
+  PROFILES.pt-BR.md
+  ADOPTION.md
+  ADOPTION.pt-BR.md
+  REFERENCE_IMPLEMENTATION.md
+  REFERENCE_IMPLEMENTATION.pt-BR.md
+  ADAPTERS.md
+  ADAPTERS.pt-BR.md
+  MANIFESTO.md
+  MANIFESTO.pt-BR.md
   MANUAL.md
   ROADMAP.md
   SECURITY.md
@@ -322,11 +341,19 @@ AutoCast/
 
 | Document | Purpose |
 |---|---|
+| `SPEC.md` / `SPEC.pt-BR.md` | AutoCast framework standard specification |
+| `METHODOLOGY.md` / `METHODOLOGY.pt-BR.md` | Development methodology |
+| `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | L0-L5 conformance model |
+| `PROFILES.md` / `PROFILES.pt-BR.md` | Secure-by-default profiles |
+| `ADOPTION.md` / `ADOPTION.pt-BR.md` | Adoption guide |
+| `REFERENCE_IMPLEMENTATION.md` / `REFERENCE_IMPLEMENTATION.pt-BR.md` | Optional tooling and reference validator positioning |
+| `ADAPTERS.md` / `ADAPTERS.pt-BR.md` | Official adapter standard |
+| `MANIFESTO.md` / `MANIFESTO.pt-BR.md` | AutoCast philosophy |
 | `CHANGELOG.md` | Version history and unreleased changes |
-| `docs/CLI.md` | Local runner usage |
+| `docs/CLI.md` | Optional reference CLI usage |
 | `docs/EVALS.md` | Eval format, metrics, and targets |
 | `docs/EVIDENCE.md` | Evidence templates and local evidence workflow |
-| `docs/INSTALL.md` | Installation options |
+| `docs/INSTALL.md` | Adoption and optional tooling options |
 | `docs/VERSIONING.md` | Version milestones and merge policy |
 | `MANUAL.md` | How to operate and customize AutoCast |
 | `ROADMAP.md` | Version direction and maturity targets |
@@ -334,7 +361,9 @@ AutoCast/
 | `adapters/*/install.md` | Tool-specific installation guides |
 | `examples/README.md` | Example AutoCast runs by route |
 | `roadmap/v0.3-development-plan.md` | Detailed plan to reach v0.3 |
+| `roadmap/post-v0.3-market-hardening.md` | Competitive roadmap after v0.3 |
 | `benchmarks/nexu-harness-engineering-guide.md` | External benchmark against Nexu's harness guide |
+| `benchmarks/competitive/2026-09-harness-framework-benchmark.md` | Competitive benchmark against adjacent harness projects |
 | `runtime/agentic-loop-contract.md` | Runtime expectations for agent tools |
 | `context/context-engineering.md` | Context priority and compression rules |
 | `evals/benchmark-plan.md` | Measurement plan for routing, judges, and security |
@@ -348,39 +377,39 @@ The conclusion:
 - Nexu is stronger for learning how to build agent runtimes from first principles.
 - AutoCast is stronger as an applied SDLC harness for shipping software with existing coding agents.
 - AutoCast should not become another generic runtime unless demand proves it.
-- AutoCast should become the practical control-plane for safe AI-assisted delivery.
+- AutoCast should become the practical framework standard for safe AI-assisted delivery.
 
 ## Roadmap
 
-Current status: `v0.3` candidate on the measurable-harness track.
+Current status: `v0.4` candidate on the framework-specification track.
 
-Near target: validated `v0.3` measurable local harness.
+Near target: formal, bilingual framework standard and methodology.
 
-The v0.3 plan focuses on:
+The v0.4 plan focuses on:
 
-- Stronger OpenCode, Claude Code, and Cursor adapters.
-- Context engineering policy.
-- Permissions classifier.
-- Security gates with evidence.
-- Eval datasets for routing, judges, and security.
-- Lightweight local runner when useful.
-- Real project examples.
+- Framework specification.
+- Development methodology.
+- Conformance levels.
+- Secure-by-default profiles with user-selected rigor.
+- Official adapters for OpenCode, Claude Code, and Cursor.
+- Bilingual documentation.
+- CLI positioning as optional reference tooling.
 
-See `ROADMAP.md` and `roadmap/v0.3-development-plan.md`.
+See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 
 ## Market Bet
 
 The winning category is not "better prompts".
 
-The winning category is an auto-standard for AI-assisted software delivery.
+The winning category is a framework standard for AI-assisted software delivery.
 
 AutoCast aims to define that standard.
 
 ## Status
 
-AutoCast is early. It is currently a framework standard, not a full executable runtime.
+AutoCast is early. It is currently a framework standard and methodology, not a full executable runtime.
 
-The next versions will focus on adapters, evals, evidence collection, and optional local runner support.
+The next versions will focus on conformance, evaluation, security assurance, official adapters, and adoption proof.
 
 ## License
 

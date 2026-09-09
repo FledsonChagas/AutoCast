@@ -13,6 +13,15 @@ AutoCast does not claim perfect security. It reduces risk through layered contro
 - Independent security judges.
 - Evidence and residual-risk records.
 
+AutoCast is secure by default. Users choose the rigor profile, not whether security exists.
+
+Profiles are defined in `PROFILES.md` and `PROFILES.pt-BR.md`:
+
+- `minimal`
+- `standard`
+- `secure`
+- `critical`
+
 ## Sensitive Areas
 
 Always escalate to `critical-change` when work touches:
