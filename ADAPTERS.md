@@ -43,3 +43,12 @@ The current adapters are reference adapters. They document the official mapping 
 That is acceptable for the framework-standard track.
 
 Future versions may add optional validators for adapter conformance.
+
+## Reference Documents
+
+- `ADAPTER_CONFORMANCE.md`
+- `ADAPTER_LIMITATIONS.md`
+- `adapters/examples/invocation-prompts.md`
+- `adapters/opencode/reference-setup.md`
+- `adapters/claude-code/reference-setup.md`
+- `adapters/cursor/reference-setup.md`

@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.5` into the `v0.6` security-assurance track.
+AutoCast is currently moving from `v0.6` into the `v0.7` reference-adapters track.
 
-The next target is `v0.6`: stronger security assurance as a framework-standard pack.
+The next target is `v0.7`: clearer official adapters as framework-standard reference mappings.
 
 ## Direction
 
@@ -31,6 +31,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.4` | Framework specification | Formal spec, methodology, conformance, profiles, adoption docs, bilingual core |
 | `v0.5` | Conformance and evaluation | Checklist, evaluation methodology, benchmark protocol, judge calibration, false-positive/negative evals |
 | `v0.6` | Security assurance | Assurance model, profile checklist, critical threat model, standards crosswalk, evidence examples |
+| `v0.7` | Reference adapters | Adapter conformance, limitations matrix, profile references, invocation prompts, setup docs |
 
 ## v0.2 Goals
 
@@ -78,6 +79,15 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add supply-chain evidence examples.
 - Add PR security evidence examples.
 - Refine OWASP/NIST/CIS/DevSecOps standards mapping.
+
+## v0.7 Goals
+
+- Define adapter conformance levels.
+- Document adapter limitations honestly by tool.
+- Add official adapter profile references.
+- Add official invocation prompts by profile.
+- Add reference setup docs for OpenCode, Claude Code, and Cursor.
+- Add adapter conformance calibration evals.
 
 ## Success Metrics
 

@@ -1,0 +1,11 @@
+{
+  "name": "AutoCast v0.7 Adapter Conformance Route Calibration",
+  "version": "0.7.0",
+  "cases": [
+    { "id": "V07-AD-001", "input": "Use AutoCast standard profile in OpenCode to add pagination.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Normal feature through official adapter." },
+    { "id": "V07-AD-002", "input": "Use AutoCast critical profile in Claude Code to change session cookie settings.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Session security." },
+    { "id": "V07-AD-003", "input": "Use AutoCast secure profile in Cursor to add server-side validation to a public form.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "External input." },
+    { "id": "V07-AD-004", "input": "Use AutoCast minimal profile to fix docs-only typo in adapter guide.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only change." },
+    { "id": "V07-AD-005", "input": "Review OpenCode adapter limitations without editing files.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Review-only adapter task." }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "autocast-harness",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Framework standard and methodology for predictable, secure, and reviewable AI-assisted software delivery.",
   "type": "module",
   "bin": {
@@ -13,6 +13,7 @@
     "eval:false-positive": "node ./bin/autocast.mjs eval evals/v0.5/false-positive.json --strict",
     "eval:false-negative": "node ./bin/autocast.mjs eval evals/v0.5/false-negative.json --strict",
     "eval:security-assurance": "node ./bin/autocast.mjs eval evals/v0.6/security-assurance.json --strict",
+    "eval:adapter-conformance": "node ./bin/autocast.mjs eval evals/v0.7/adapter-conformance.json --strict",
     "report": "node ./bin/autocast.mjs report",
     "init:harness": "node ./bin/autocast.mjs init"
   },

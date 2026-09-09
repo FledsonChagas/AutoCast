@@ -79,7 +79,7 @@ function firstMatch(patterns, text) {
 
 function isReviewOnly(text) {
   const wantsReview = /\b(review|diagnose|diagnosis|analyze|analyse|plan|planning|brainstorm|compare)\b/.test(text);
-  const blocksEdits = /\b(do not edit|no edits|without edits|without editing code|no code changes|do not change|without changing files|review only|diagnose only)\b/.test(text);
+  const blocksEdits = /\b(do not edit|no edits|without edits|without editing code|without editing files|no code changes|do not change|without changing files|review only|diagnose only)\b/.test(text);
   return wantsReview && blocksEdits;
 }
 

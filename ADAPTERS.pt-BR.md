@@ -43,3 +43,12 @@ Os adapters atuais são adapters de referência. Eles documentam o mapeamento of
 Isso é aceitável para a trilha de framework standard.
 
 Versões futuras podem adicionar validadores opcionais para conformidade dos adapters.
+
+## Documentos De Referência
+
+- `ADAPTER_CONFORMANCE.pt-BR.md`
+- `ADAPTER_LIMITATIONS.pt-BR.md`
+- `adapters/examples/invocation-prompts.pt-BR.md`
+- `adapters/opencode/reference-setup.pt-BR.md`
+- `adapters/claude-code/reference-setup.pt-BR.md`
+- `adapters/cursor/reference-setup.pt-BR.md`

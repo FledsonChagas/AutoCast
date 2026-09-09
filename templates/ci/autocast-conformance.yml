@@ -32,5 +32,8 @@ jobs:
       - name: Security assurance evals
         run: npm run eval:security-assurance
 
+      - name: Adapter conformance evals
+        run: npm run eval:adapter-conformance
+
       - name: Runner syntax
         run: node --check bin/autocast.mjs
