@@ -29,5 +29,8 @@ jobs:
       - name: False-negative evals
         run: npm run eval:false-negative
 
+      - name: Security assurance evals
+        run: npm run eval:security-assurance
+
       - name: Runner syntax
         run: node --check bin/autocast.mjs

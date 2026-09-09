@@ -43,6 +43,7 @@ const CRITICAL_PATTERNS = [
   ['payments or billing', /\b(payment|payments|billing|stripe|checkout)\b/],
   ['production data', /\b(production data|prod data|customer data migration|live data)\b/],
   ['infrastructure or deployment', /\b(infrastructure|infra|deploy|deployment|ci\/cd|github actions|release job)\b/],
+  ['security control bypass', /\b(disable ci security scan|disable security scan|bypass security scan|disable ci check|bypass ci check)\b/],
   ['cloud permission widening', /\b(iam|cloud role|service role|s3 bucket|wildcard permission|admin role)\b/],
   ['cryptography', /\b(cryptography|crypto|encryption|decrypt|private key|signing key)\b/],
   ['compliance', /\b(compliance|regulated|audit logging for admin|audit log for admin)\b/],
@@ -78,7 +79,7 @@ function firstMatch(patterns, text) {
 
 function isReviewOnly(text) {
   const wantsReview = /\b(review|diagnose|diagnosis|analyze|analyse|plan|planning|brainstorm|compare)\b/.test(text);
-  const blocksEdits = /\b(do not edit|no edits|without edits|no code changes|do not change|without changing files|review only|diagnose only)\b/.test(text);
+  const blocksEdits = /\b(do not edit|no edits|without edits|without editing code|no code changes|do not change|without changing files|review only|diagnose only)\b/.test(text);
   return wantsReview && blocksEdits;
 }
 
@@ -115,27 +116,29 @@ function classifyRoute(input) {
     };
   }
 
-  const criticalReason = firstMatch(CRITICAL_PATTERNS, text);
-  const secureReason = firstMatch(SECURE_PATTERNS, text);
-  const fastReason = firstMatch(FAST_PATTERNS, text);
-
   if (isReviewOnly(text)) {
     route = 'review-only';
     reasons.push('user requested review/diagnosis/planning without edits');
   } else if (isDocsOnly(text)) {
     route = 'fast-lane';
     reasons.push('documentation-only');
-  } else if (criticalReason) {
-    route = 'critical-change';
-    reasons.push(criticalReason);
-  } else if (secureReason) {
-    route = 'secure-change';
-    reasons.push(secureReason);
-  } else if (fastReason) {
-    route = 'fast-lane';
-    reasons.push(fastReason);
   } else {
-    reasons.push('normal software delivery task');
+    const criticalReason = firstMatch(CRITICAL_PATTERNS, text);
+    const secureReason = firstMatch(SECURE_PATTERNS, text);
+    const fastReason = firstMatch(FAST_PATTERNS, text);
+
+    if (criticalReason) {
+      route = 'critical-change';
+      reasons.push(criticalReason);
+    } else if (secureReason) {
+      route = 'secure-change';
+      reasons.push(secureReason);
+    } else if (fastReason) {
+      route = 'fast-lane';
+      reasons.push(fastReason);
+    } else {
+      reasons.push('normal software delivery task');
+    }
   }
 
   const policy = ROUTE_POLICY[route];

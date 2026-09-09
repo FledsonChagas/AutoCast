@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.4` into the `v0.5` conformance-and-evaluation track.
+AutoCast is currently moving from `v0.5` into the `v0.6` security-assurance track.
 
-The next target is `v0.5`: measurable conformance and evaluation without mandatory tooling.
+The next target is `v0.6`: stronger security assurance as a framework-standard pack.
 
 ## Direction
 
@@ -30,6 +30,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, schemas, and optional local runner |
 | `v0.4` | Framework specification | Formal spec, methodology, conformance, profiles, adoption docs, bilingual core |
 | `v0.5` | Conformance and evaluation | Checklist, evaluation methodology, benchmark protocol, judge calibration, false-positive/negative evals |
+| `v0.6` | Security assurance | Assurance model, profile checklist, critical threat model, standards crosswalk, evidence examples |
 
 ## v0.2 Goals
 
@@ -67,6 +68,16 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add route decision examples.
 - Add false-positive and false-negative eval suites.
 - Add optional CI template for reference checks.
+
+## v0.6 Goals
+
+- Add security assurance model in English and Portuguese.
+- Add security profile checklist in English and Portuguese.
+- Add critical-change threat model pack.
+- Add permission classifier examples.
+- Add supply-chain evidence examples.
+- Add PR security evidence examples.
+- Refine OWASP/NIST/CIS/DevSecOps standards mapping.
 
 ## Success Metrics
 

@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.5%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.6%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -356,6 +356,9 @@ AutoCast/
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | L0-L5 conformance model |
 | `CONFORMANCE_CHECKLIST.md` / `CONFORMANCE_CHECKLIST.pt-BR.md` | Human-readable conformance checklist |
 | `PROFILES.md` / `PROFILES.pt-BR.md` | Secure-by-default profiles |
+| `SECURITY_ASSURANCE.md` / `SECURITY_ASSURANCE.pt-BR.md` | Security assurance model |
+| `SECURITY_PROFILE_CHECKLIST.md` / `SECURITY_PROFILE_CHECKLIST.pt-BR.md` | Security profile checklist |
+| `CRITICAL_CHANGE_THREAT_MODEL.md` / `CRITICAL_CHANGE_THREAT_MODEL.pt-BR.md` | Critical-change threat model pack |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Adoption guide |
 | `EVALUATION.md` / `EVALUATION.pt-BR.md` | Evaluation methodology |
 | `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | With/without AutoCast benchmark protocol |
@@ -396,18 +399,19 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.5` candidate on the conformance-and-evaluation track.
+Current status: `v0.6` candidate on the security-assurance track.
 
-Near target: measurable conformance and evaluation without mandatory tooling.
+Near target: stronger security assurance without turning AutoCast into a mandatory runtime.
 
-The v0.5 plan focuses on:
+The v0.6 plan focuses on:
 
-- Conformance checklist.
-- Evaluation methodology.
-- False-positive and false-negative eval suites.
-- Judge calibration guidance.
-- With/without AutoCast benchmark protocol.
-- Optional CI template for reference checks.
+- Security assurance model.
+- Security profile checklists.
+- Critical-change threat modeling.
+- Permission classifier examples.
+- Supply-chain evidence examples.
+- PR security evidence examples.
+- Standards crosswalk for OWASP, NIST SSDF, CIS Controls, and DevSecOps.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 

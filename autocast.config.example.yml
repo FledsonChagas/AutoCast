@@ -1,5 +1,5 @@
 name: AutoCast
-version: 0.5.0
+version: 0.6.0
 
 defaults:
   language: auto
@@ -126,4 +126,5 @@ runner:
   supplemental_eval_suites:
     - evals/v0.5/false-positive.json
     - evals/v0.5/false-negative.json
+    - evals/v0.6/security-assurance.json
   local_evidence_dir: .autocast

@@ -9,6 +9,7 @@ Structured evals live in:
 - `evals/v0.3/route-selection.json`
 - `evals/v0.5/false-positive.json`
 - `evals/v0.5/false-negative.json`
+- `evals/v0.6/security-assurance.json`
 
 Schema:
 
@@ -45,6 +46,7 @@ node bin/autocast.mjs eval --strict
 npm run eval:strict
 npm run eval:false-positive
 npm run eval:false-negative
+npm run eval:security-assurance
 ```
 
 ## Interpretation
