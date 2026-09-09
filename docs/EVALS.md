@@ -10,6 +10,7 @@ Structured evals live in:
 - `evals/v0.5/false-positive.json`
 - `evals/v0.5/false-negative.json`
 - `evals/v0.6/security-assurance.json`
+- `evals/v0.7/adapter-conformance.json`
 
 Schema:
 
@@ -47,6 +48,7 @@ npm run eval:strict
 npm run eval:false-positive
 npm run eval:false-negative
 npm run eval:security-assurance
+npm run eval:adapter-conformance
 ```
 
 ## Interpretation

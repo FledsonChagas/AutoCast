@@ -7,7 +7,7 @@
 Torne agentes de código com IA previsíveis, seguros, revisáveis e repetíveis.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.6%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.7%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#suporte-a-ferramentas)
 
@@ -248,6 +248,8 @@ Comece por `SECURITY.md`, `PROFILES.pt-BR.md`, `security/security-baseline.md`, 
 | `ROUTE_EXAMPLES.md` / `ROUTE_EXAMPLES.pt-BR.md` | Exemplos de decisão de rota |
 | `REFERENCE_IMPLEMENTATION.md` / `REFERENCE_IMPLEMENTATION.pt-BR.md` | Tooling opcional e CLI como validador de referência |
 | `ADAPTERS.md` / `ADAPTERS.pt-BR.md` | Padrão oficial de adapters |
+| `ADAPTER_CONFORMANCE.md` / `ADAPTER_CONFORMANCE.pt-BR.md` | Níveis e requisitos de conformidade dos adapters |
+| `ADAPTER_LIMITATIONS.md` / `ADAPTER_LIMITATIONS.pt-BR.md` | Matriz de limitações dos adapters por ferramenta |
 | `MANIFESTO.md` / `MANIFESTO.pt-BR.md` | Filosofia AutoCast |
 | `ROADMAP.md` | Direção de versões e maturidade |
 | `SECURITY.md` | Política de segurança |
@@ -262,7 +264,7 @@ AutoCast mira definir esse padrão.
 
 ## Status
 
-AutoCast está em evolução. Na `v0.6`, o foco é fortalecer security assurance sem transformar AutoCast em runtime obrigatório.
+AutoCast está em evolução. Na `v0.7`, o foco é fortalecer adapters oficiais sem transformar AutoCast em installer obrigatório.
 
 ## Licença
 

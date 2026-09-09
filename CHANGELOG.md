@@ -1,6 +1,24 @@
 # Changelog
 
-## v0.6.0 - Unreleased
+## v0.7.0 - Unreleased
+
+### Added
+
+- Adapter conformance standard in English and Portuguese.
+- Adapter limitations matrix in English and Portuguese.
+- Official adapter profile references for `minimal`, `standard`, `secure`, and `critical`.
+- Official adapter invocation prompt examples in English and Portuguese.
+- Reference setup docs for OpenCode, Claude Code, and Cursor in English and Portuguese.
+- v0.7 adapter conformance route calibration eval suite.
+- v0.7 adapter conformance benchmark report.
+- npm script for adapter conformance evals.
+
+### Changed
+
+- Reference router now recognizes `without editing files` as review-only intent.
+- Config now targets v0.7.0 and includes the v0.7 adapter conformance eval suite.
+
+## v0.6.0 - 2026-09-09
 
 ### Added
 

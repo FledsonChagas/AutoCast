@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.6%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.7%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -323,6 +323,10 @@ AutoCast/
   REFERENCE_IMPLEMENTATION.pt-BR.md
   ADAPTERS.md
   ADAPTERS.pt-BR.md
+  ADAPTER_CONFORMANCE.md
+  ADAPTER_CONFORMANCE.pt-BR.md
+  ADAPTER_LIMITATIONS.md
+  ADAPTER_LIMITATIONS.pt-BR.md
   MANIFESTO.md
   MANIFESTO.pt-BR.md
   MANUAL.md
@@ -366,6 +370,8 @@ AutoCast/
 | `ROUTE_EXAMPLES.md` / `ROUTE_EXAMPLES.pt-BR.md` | Route decision examples |
 | `REFERENCE_IMPLEMENTATION.md` / `REFERENCE_IMPLEMENTATION.pt-BR.md` | Optional tooling and reference validator positioning |
 | `ADAPTERS.md` / `ADAPTERS.pt-BR.md` | Official adapter standard |
+| `ADAPTER_CONFORMANCE.md` / `ADAPTER_CONFORMANCE.pt-BR.md` | Adapter conformance levels and requirements |
+| `ADAPTER_LIMITATIONS.md` / `ADAPTER_LIMITATIONS.pt-BR.md` | Tool-specific adapter limitations matrix |
 | `MANIFESTO.md` / `MANIFESTO.pt-BR.md` | AutoCast philosophy |
 | `CHANGELOG.md` | Version history and unreleased changes |
 | `docs/CLI.md` | Optional reference CLI usage |
@@ -399,19 +405,18 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.6` candidate on the security-assurance track.
+Current status: `v0.7` candidate on the reference-adapters track.
 
-Near target: stronger security assurance without turning AutoCast into a mandatory runtime.
+Near target: clearer official adapters without turning AutoCast into a mandatory installer.
 
-The v0.6 plan focuses on:
+The v0.7 plan focuses on:
 
-- Security assurance model.
-- Security profile checklists.
-- Critical-change threat modeling.
-- Permission classifier examples.
-- Supply-chain evidence examples.
-- PR security evidence examples.
-- Standards crosswalk for OWASP, NIST SSDF, CIS Controls, and DevSecOps.
+- Adapter conformance levels.
+- Adapter limitations matrix.
+- Official profile references for adapters.
+- Official invocation prompts by profile.
+- Reference setup docs for OpenCode, Claude Code, and Cursor.
+- Adapter conformance eval calibration.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 
