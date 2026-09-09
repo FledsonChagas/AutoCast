@@ -1,6 +1,27 @@
 # Changelog
 
-## v0.5.0 - Unreleased
+## v0.6.0 - Unreleased
+
+### Added
+
+- Security Assurance Pack in English and Portuguese.
+- Security profile checklist in English and Portuguese.
+- Critical-change threat model pack in English and Portuguese.
+- Permission classifier examples in English and Portuguese.
+- Supply-chain evidence examples in English and Portuguese.
+- PR security evidence examples in English and Portuguese.
+- Security standards crosswalk for OWASP, NIST SSDF, CIS Controls, and DevSecOps.
+- v0.6 security assurance route calibration eval suite.
+- v0.6 security assurance benchmark report.
+- npm script for security assurance evals.
+
+### Changed
+
+- Reference router now treats security-control bypasses as critical changes.
+- Reference router gives review-only intent precedence when the user explicitly blocks edits.
+- Config now targets v0.6.0 and includes the v0.6 security assurance eval suite.
+
+## v0.5.0 - 2026-09-09
 
 ### Added
 

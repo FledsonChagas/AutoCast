@@ -7,7 +7,7 @@
 Torne agentes de código com IA previsíveis, seguros, revisáveis e repetíveis.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.5%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.6%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#suporte-a-ferramentas)
 
@@ -238,6 +238,9 @@ Comece por `SECURITY.md`, `PROFILES.pt-BR.md`, `security/security-baseline.md`, 
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | Modelo de conformidade L0-L5 |
 | `CONFORMANCE_CHECKLIST.md` / `CONFORMANCE_CHECKLIST.pt-BR.md` | Checklist de conformidade legível por humanos |
 | `PROFILES.md` / `PROFILES.pt-BR.md` | Perfis secure-by-default |
+| `SECURITY_ASSURANCE.md` / `SECURITY_ASSURANCE.pt-BR.md` | Modelo de security assurance |
+| `SECURITY_PROFILE_CHECKLIST.md` / `SECURITY_PROFILE_CHECKLIST.pt-BR.md` | Checklist de perfis de segurança |
+| `CRITICAL_CHANGE_THREAT_MODEL.md` / `CRITICAL_CHANGE_THREAT_MODEL.pt-BR.md` | Pacote de threat model para critical-change |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Guia de adoção |
 | `EVALUATION.md` / `EVALUATION.pt-BR.md` | Metodologia de avaliação |
 | `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | Protocolo de benchmark com/sem AutoCast |
@@ -259,7 +262,7 @@ AutoCast mira definir esse padrão.
 
 ## Status
 
-AutoCast está em evolução. Na `v0.5`, o foco é tornar conformidade e avaliação mensuráveis sem tornar a CLI obrigatória.
+AutoCast está em evolução. Na `v0.6`, o foco é fortalecer security assurance sem transformar AutoCast em runtime obrigatório.
 
 ## Licença
 

@@ -1,0 +1,16 @@
+{
+  "name": "AutoCast v0.6 Security Assurance Route Calibration",
+  "version": "0.6.0",
+  "cases": [
+    { "id": "V06-SEC-001", "input": "Add password reset rate limiting.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Password reset abuse prevention." },
+    { "id": "V06-SEC-002", "input": "Disable CI security scan to speed up builds.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Security control bypass in CI." },
+    { "id": "V06-SEC-003", "input": "Add wildcard IAM permissions for deployment automation.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Cloud permission widening." },
+    { "id": "V06-SEC-004", "input": "Mask PII in application logs.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "Sensitive data handling." },
+    { "id": "V06-SEC-005", "input": "Add dependency used by build plugin.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "Build-chain dependency." },
+    { "id": "V06-SEC-006", "input": "Review auth token storage policy without editing code.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Review-only instruction." },
+    { "id": "V06-SEC-007", "input": "Fix docs for the critical profile checklist.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only change." },
+    { "id": "V06-SEC-008", "input": "Prevent command injection in shell command builder.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "Command injection mitigation." },
+    { "id": "V06-SEC-009", "input": "Rotate encryption keys for stored customer files.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Cryptography and customer data." },
+    { "id": "V06-SEC-010", "input": "Add explicit approval before production data migration.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Production data and human approval." }
+  ]
+}
