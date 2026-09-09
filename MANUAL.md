@@ -115,13 +115,16 @@ Use `ROADMAP.md` and `roadmap/v0.3-development-plan.md` to follow the path from 
 
 OpenCode:
 
+- Start with `adapters/opencode/install.md`.
 - Copy `adapters/opencode/agents/*.md` into `.opencode/agent/` or `.opencode/agents/`.
 - If you add an `opencode.json`, include the official schema and restart OpenCode after config changes.
 
 Claude Code:
 
+- Start with `adapters/claude-code/install.md`.
 - Merge `adapters/claude-code/CLAUDE.md` into your project `CLAUDE.md`.
 
 Cursor:
 
+- Start with `adapters/cursor/install.md`.
 - Copy `adapters/cursor/rules/autocast.mdc` into `.cursor/rules/`.

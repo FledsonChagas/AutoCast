@@ -1,6 +1,6 @@
 # AutoCast Roadmap
 
-AutoCast is currently `v0.1`: a portable harness standard for AI-assisted software delivery.
+AutoCast is currently moving from `v0.1` into the `v0.2` adapter-enforcement track.
 
 The next target is `v0.3`: a measurable, adapter-ready local harness that can establish AutoCast as a practical market standard.
 
@@ -25,7 +25,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | Version | Theme | Outcome |
 |---|---|---|
 | `v0.1` | Harness standard | Markdown workflows, agents, judges, security baseline |
-| `v0.2` | Adapter enforcement | Strong OpenCode, Claude Code, Cursor installation paths and examples |
+| `v0.2` | Adapter enforcement | Strong OpenCode, Claude Code, Cursor installation paths, examples, and eval expansion |
 | `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, optional local runner |
 
 ## v0.2 Goals

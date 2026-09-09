@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.1%20harness%20standard-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.2%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -218,11 +218,11 @@ AutoCast is designed to work with the tools developers already use.
 | Claude Code | `adapters/claude-code/` | Initial adapter |
 | Cursor | `adapters/cursor/` | Initial adapter |
 
-OpenCode users can copy agent files from `adapters/opencode/agents/` into `.opencode/agent/` or `.opencode/agents/`. Restart OpenCode after changing agents, skills, plugins, MCP servers, permission rules, or config files.
+OpenCode users can start with `adapters/opencode/install.md` and copy agent files from `adapters/opencode/agents/` into `.opencode/agent/` or `.opencode/agents/`. Restart OpenCode after changing agents, skills, plugins, MCP servers, permission rules, or config files.
 
-Claude Code users can merge `adapters/claude-code/CLAUDE.md` into their project `CLAUDE.md`.
+Claude Code users can start with `adapters/claude-code/install.md` and merge `adapters/claude-code/CLAUDE.md` into their project `CLAUDE.md`.
 
-Cursor users can copy `adapters/cursor/rules/autocast.mdc` into `.cursor/rules/`.
+Cursor users can start with `adapters/cursor/install.md` and copy `adapters/cursor/rules/autocast.mdc` into `.cursor/rules/`.
 
 ## Security Model
 
@@ -309,9 +309,12 @@ AutoCast/
 
 | Document | Purpose |
 |---|---|
+| `CHANGELOG.md` | Version history and unreleased changes |
 | `MANUAL.md` | How to operate and customize AutoCast |
 | `ROADMAP.md` | Version direction and maturity targets |
 | `SECURITY.md` | Security policy and sensitive-area rules |
+| `adapters/*/install.md` | Tool-specific installation guides |
+| `examples/README.md` | Example AutoCast runs by route |
 | `roadmap/v0.3-development-plan.md` | Detailed plan to reach v0.3 |
 | `benchmarks/nexu-harness-engineering-guide.md` | External benchmark against Nexu's harness guide |
 | `runtime/agentic-loop-contract.md` | Runtime expectations for agent tools |
@@ -331,7 +334,7 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.1` framework standard and prompt-pack.
+Current status: `v0.2` candidate on the adapter-enforcement track.
 
 Near target: `v0.3` measurable local harness.
 
