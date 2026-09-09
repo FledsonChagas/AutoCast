@@ -1,5 +1,5 @@
 name: AutoCast
-version: 0.2.0
+version: 0.3.0
 
 defaults:
   language: auto
@@ -85,3 +85,9 @@ eval_targets:
   critical_escalation_recall_min: 0.95
   security_high_risk_detection_min: 0.90
   correctness_blocker_detection_min: 0.80
+  security_escalation_recall_min: 0.95
+
+runner:
+  optional: true
+  default_eval_suite: evals/v0.3/route-selection.json
+  local_evidence_dir: .autocast

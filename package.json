@@ -1,0 +1,30 @@
+{
+  "name": "autocast-harness",
+  "version": "0.3.0",
+  "description": "AI SDLC harness framework for predictable, secure, and reviewable AI-assisted software delivery.",
+  "type": "module",
+  "bin": {
+    "autocast": "./bin/autocast.mjs"
+  },
+  "scripts": {
+    "route": "node ./bin/autocast.mjs route",
+    "eval": "node ./bin/autocast.mjs eval",
+    "eval:strict": "node ./bin/autocast.mjs eval --strict",
+    "report": "node ./bin/autocast.mjs report",
+    "init:harness": "node ./bin/autocast.mjs init"
+  },
+  "keywords": [
+    "ai",
+    "ai-agents",
+    "ai-coding",
+    "agentic-coding",
+    "harness",
+    "harness-engineering",
+    "sdlc",
+    "devsecops",
+    "opencode",
+    "claude-code",
+    "cursor"
+  ],
+  "license": "Apache-2.0"
+}

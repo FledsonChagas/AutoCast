@@ -1,6 +1,21 @@
 # Changelog
 
-## v0.2.0 - Unreleased
+## v0.3.0 - Unreleased
+
+### Added
+
+- Dependency-free local runner with `init`, `route`, `eval`, and `report` commands.
+- Structured v0.3 route-selection eval suite with 60 cases.
+- JSON schemas for route decisions and eval suites.
+- CLI, eval, evidence, install, and versioning documentation.
+- v0.3 benchmark report stub for local route-selection scoring.
+
+### Changed
+
+- Package metadata and config now target v0.3.0.
+- README and roadmap now describe the measurable local harness milestone.
+
+## v0.2.0 - 2026-09-09
 
 ### Added
 

@@ -1,6 +1,6 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.1` into the `v0.2` adapter-enforcement track.
+AutoCast is currently moving from `v0.2` into the `v0.3` measurable-harness track.
 
 The next target is `v0.3`: a measurable, adapter-ready local harness that can establish AutoCast as a practical market standard.
 
@@ -26,7 +26,7 @@ It should avoid becoming an unfocused generic runtime too early.
 |---|---|---|
 | `v0.1` | Harness standard | Markdown workflows, agents, judges, security baseline |
 | `v0.2` | Adapter enforcement | Strong OpenCode, Claude Code, Cursor installation paths, examples, and eval expansion |
-| `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, optional local runner |
+| `v0.3` | Measurable harness | Eval suite, scoring, evidence conventions, schemas, and optional local runner |
 
 ## v0.2 Goals
 
@@ -39,9 +39,9 @@ It should avoid becoming an unfocused generic runtime too early.
 
 ## v0.3 Goals
 
-- Add at least 60 eval cases.
-- Measure route accuracy, security escalation recall, judge accuracy, and false positives.
-- Add an optional local runner for intake, routing, and evidence collection.
+- Add at least 60 structured eval cases.
+- Measure route accuracy, security escalation recall, and critical escalation recall.
+- Add an optional local runner for routing, eval scoring, reports, and evidence setup.
 - Add sandbox strategy validation.
 - Add mature adapter packs for OpenCode, Claude Code, and Cursor.
 - Publish benchmark results against known failure patterns.
