@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.7` into the `v0.8` adoption-evidence track.
+AutoCast is currently moving from `v0.8` into the `v0.9` public-readiness and governance track.
 
-The next target is `v0.8`: adoption evidence methodology, pilot guidance, and realistic case study samples.
+The next target is `v0.9`: public-readiness and governance before any v1.0 decision.
 
 ## Direction
 
@@ -33,6 +33,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.6` | Security assurance | Assurance model, profile checklist, critical threat model, standards crosswalk, evidence examples |
 | `v0.7` | Reference adapters | Adapter conformance, limitations matrix, profile references, invocation prompts, setup docs |
 | `v0.8` | Adoption evidence | Evidence policy, adoption metrics, pilot guide, case study templates, realistic samples |
+| `v0.9` | Public readiness | Contribution guide, governance, claims policy, release checklist, v1.0 readiness, issue/PR templates |
 
 ## v0.2 Goals
 
@@ -99,6 +100,16 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add realistic sample case studies.
 - Add adoption evidence calibration evals.
 - Avoid external proof claims until real pilots exist.
+
+## v0.9 Goals
+
+- Add contribution guide.
+- Add governance model.
+- Add code of conduct.
+- Add claims policy.
+- Add release checklist.
+- Add v1.0 readiness criteria.
+- Add GitHub issue and PR templates.
 
 ## Success Metrics
 

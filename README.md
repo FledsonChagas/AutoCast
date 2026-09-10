@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.8%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.9%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -367,6 +367,11 @@ AutoCast/
 | `ADOPTION_EVIDENCE.md` / `ADOPTION_EVIDENCE.pt-BR.md` | Adoption evidence policy |
 | `ADOPTION_METRICS.md` / `ADOPTION_METRICS.pt-BR.md` | Adoption measurement metrics |
 | `PILOT_GUIDE.md` / `PILOT_GUIDE.pt-BR.md` | Pilot guide for real-world adoption |
+| `CONTRIBUTING.md` / `CONTRIBUTING.pt-BR.md` | Contribution guide |
+| `GOVERNANCE.md` / `GOVERNANCE.pt-BR.md` | Governance model |
+| `CLAIMS_POLICY.md` / `CLAIMS_POLICY.pt-BR.md` | Public claims and evidence policy |
+| `RELEASE_CHECKLIST.md` / `RELEASE_CHECKLIST.pt-BR.md` | Release checklist |
+| `V1_READINESS.md` / `V1_READINESS.pt-BR.md` | v1.0 readiness criteria |
 | `EVALUATION.md` / `EVALUATION.pt-BR.md` | Evaluation methodology |
 | `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | With/without AutoCast benchmark protocol |
 | `JUDGE_CALIBRATION.md` / `JUDGE_CALIBRATION.pt-BR.md` | Judge calibration guide |
@@ -408,18 +413,18 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.8` candidate on the adoption-evidence track.
+Current status: `v0.9` candidate on the public-readiness and governance track.
 
-Near target: adoption evidence methodology, pilot guidance, and realistic case study samples.
+Near target: open source public-readiness before any v1.0 decision.
 
-The v0.8 plan focuses on:
+The v0.9 plan focuses on:
 
-- Adoption evidence policy.
-- Adoption metrics.
-- Pilot guide.
-- Case study templates.
-- Realistic sample case studies.
-- Adoption evidence eval calibration.
+- Contribution guidelines.
+- Governance model.
+- Claims policy.
+- Release checklist.
+- v1.0 readiness criteria.
+- GitHub issue and PR templates.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 

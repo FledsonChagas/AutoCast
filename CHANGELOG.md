@@ -1,6 +1,26 @@
 # Changelog
 
-## v0.8.0 - Unreleased
+## v0.9.0 - Unreleased
+
+### Added
+
+- Contributing guide in English and Portuguese.
+- Code of conduct.
+- Governance guide in English and Portuguese.
+- Claims policy in English and Portuguese.
+- Release checklist in English and Portuguese.
+- v1.0 readiness criteria in English and Portuguese.
+- GitHub issue templates for bugs, feature requests, and adoption evidence.
+- GitHub pull request template.
+- Release notes template.
+- v0.9 public readiness report.
+
+### Changed
+
+- Package and config metadata now target v0.9.0.
+- README and roadmap now describe public-readiness and governance as the current track.
+
+## v0.8.0 - 2026-09-09
 
 ### Added
 
