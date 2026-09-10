@@ -17,15 +17,15 @@ O objetivo não é burocracia. O objetivo é linguagem compartilhada e adoção 
 
 ## Maturidade Atual Do Repositório AutoCast
 
-AutoCast v0.7 candidate está aproximadamente em:
+AutoCast v0.8 candidate está aproximadamente em:
 
 ```txt
 L3: AutoCast Secure
 ```
 
-Ele possui definição de rotas, workflows, juízes, templates de evidência, baseline de segurança, adapters oficiais, documentos de especificação do framework, perfis, checklists de conformidade, pacote de security assurance, docs de conformidade de adapters e suítes iniciais de evals.
+Ele possui definição de rotas, workflows, juízes, templates de evidência, baseline de segurança, adapters oficiais, documentos de especificação do framework, perfis, checklists de conformidade, pacote de security assurance, docs de conformidade de adapters, metodologia de evidência de adoção, samples realistas e suítes iniciais de evals.
 
-Ele tem sinais parciais de L4 porque já existem evals de rota, falso positivo/falso negativo, security assurance e adapter conformance, mas ainda não é plenamente L4/L5 porque validação externa, evidência ampla de adoção real, automação de juízes e certificação independente ainda não existem.
+Ele tem sinais parciais de L4 porque já existem evals de rota, falso positivo/falso negativo, security assurance, adapter conformance e adoption evidence, mas ainda não é plenamente L4/L5 porque validação externa, evidência ampla de adoção real, automação de juízes e certificação independente ainda não existem.
 
 ## Requisitos Mínimos L2
 

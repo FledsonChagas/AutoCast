@@ -7,7 +7,7 @@
 Torne agentes de código com IA previsíveis, seguros, revisáveis e repetíveis.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.7%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.8%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#suporte-a-ferramentas)
 
@@ -242,6 +242,9 @@ Comece por `SECURITY.md`, `PROFILES.pt-BR.md`, `security/security-baseline.md`, 
 | `SECURITY_PROFILE_CHECKLIST.md` / `SECURITY_PROFILE_CHECKLIST.pt-BR.md` | Checklist de perfis de segurança |
 | `CRITICAL_CHANGE_THREAT_MODEL.md` / `CRITICAL_CHANGE_THREAT_MODEL.pt-BR.md` | Pacote de threat model para critical-change |
 | `ADOPTION.md` / `ADOPTION.pt-BR.md` | Guia de adoção |
+| `ADOPTION_EVIDENCE.md` / `ADOPTION_EVIDENCE.pt-BR.md` | Política de evidência de adoção |
+| `ADOPTION_METRICS.md` / `ADOPTION_METRICS.pt-BR.md` | Métricas de adoção |
+| `PILOT_GUIDE.md` / `PILOT_GUIDE.pt-BR.md` | Guia de piloto para adoção real |
 | `EVALUATION.md` / `EVALUATION.pt-BR.md` | Metodologia de avaliação |
 | `BENCHMARK_PROTOCOL.md` / `BENCHMARK_PROTOCOL.pt-BR.md` | Protocolo de benchmark com/sem AutoCast |
 | `JUDGE_CALIBRATION.md` / `JUDGE_CALIBRATION.pt-BR.md` | Guia de calibragem de juízes |
@@ -264,7 +267,7 @@ AutoCast mira definir esse padrão.
 
 ## Status
 
-AutoCast está em evolução. Na `v0.7`, o foco é fortalecer adapters oficiais sem transformar AutoCast em installer obrigatório.
+AutoCast está em evolução. Na `v0.8`, o foco é evidência de adoção, guias de piloto e case studies realistas sem exagerar claims externos.
 
 ## Licença
 
