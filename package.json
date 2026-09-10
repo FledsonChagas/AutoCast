@@ -1,6 +1,6 @@
 {
   "name": "autocast-harness",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Framework standard and methodology for predictable, secure, and reviewable AI-assisted software delivery.",
   "type": "module",
   "bin": {
