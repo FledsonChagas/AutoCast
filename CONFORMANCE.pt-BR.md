@@ -10,26 +10,27 @@ O objetivo não é burocracia. O objetivo é linguagem compartilhada e adoção 
 |---|---|---|
 | L0 | Prompt Pack | Usa prompts ou documentos AutoCast informalmente |
 | L1 | AutoCast Structured | Usa task briefs, rotas, workflows e juízes básicos |
-| L2 | AutoCast Compliant | Segue o loop canônico e registra evidências para trabalho não trivial |
+| L2 | AutoCast Compliant | Segue o loop canônico, usa `.autocast/` e registra evidências para trabalho não trivial |
 | L3 | AutoCast Secure | Aplica perfis secure-by-default e juízes de segurança para trabalho sensível |
 | L4 | AutoCast Verified | Executa evals, acompanha qualidade dos juízes e valida decisões de rota |
 | L5 | AutoCast Certified | Revisado independentemente, benchmarkado e governado em processo repetível |
 
 ## Maturidade Atual Do Repositório AutoCast
 
-AutoCast v0.9 candidate está aproximadamente em:
+AutoCast v0.10 candidate está aproximadamente em:
 
 ```txt
 L3: AutoCast Secure
 ```
 
-Ele possui definição de rotas, workflows, juízes, templates de evidência, baseline de segurança, adapters oficiais, documentos de especificação do framework, perfis, checklists de conformidade, pacote de security assurance, docs de conformidade de adapters, metodologia de evidência de adoção, samples realistas, docs de governança e suítes iniciais de evals.
+Ele possui definição de rotas, workflows, juízes, templates de evidência, baseline de segurança, adapters oficiais, documentos de especificação do framework, perfis, checklists de conformidade, layout canônico `.autocast/`, pacote de security assurance, docs de conformidade de adapters, metodologia de evidência de adoção, samples realistas, docs de governança e suítes iniciais de evals.
 
-Ele tem sinais parciais de L4 porque já existem evals de rota, falso positivo/falso negativo, security assurance, adapter conformance e adoption evidence, mas ainda não é plenamente L4/L5 porque validação externa, evidência ampla de adoção real, automação de juízes e certificação independente ainda não existem.
+Ele tem sinais parciais de L4 porque já existem evals de rota, falso positivo/falso negativo, security assurance, adapter conformance, adoption evidence e canonical layout, mas ainda não é plenamente L4/L5 porque validação externa, evidência ampla de adoção real, automação de juízes e certificação independente ainda não existem.
 
 ## Requisitos Mínimos L2
 
 - Usar o loop canônico AutoCast.
+- Usar o layout canônico `.autocast/` ou documentar um mapeamento equivalente.
 - Classificar trabalho em uma rota oficial.
 - Usar task brief para trabalho não trivial.
 - Aplicar o baseline de segurança.

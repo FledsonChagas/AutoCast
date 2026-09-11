@@ -1,0 +1,18 @@
+project:
+  name: ""
+  default_profile: standard
+  adapters:
+    - opencode
+    - claude-code
+    - cursor
+
+autocast:
+  conformance_target: L2
+  secure_by_default: true
+  user_selects_rigor: true
+  core_path: .autocast/core
+  project_state_path: .autocast
+
+evidence:
+  commit_sanitized_evidence: true
+  keep_raw_sensitive_evidence_local: true

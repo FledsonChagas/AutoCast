@@ -25,6 +25,6 @@ __pycache__/
 *.pyc
 
 # AutoCast local output
-.autocast/
+/.autocast/
 autocast.local.yml
 preview/

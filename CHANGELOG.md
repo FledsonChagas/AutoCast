@@ -1,6 +1,25 @@
 # Changelog
 
-## v0.9.0 - Unreleased
+## v0.10.0 - Unreleased
+
+### Added
+
+- Canonical `.autocast/` project layout in English and Portuguese.
+- Project layout ownership policy in English and Portuguese.
+- Official `templates/project-layout/.autocast/` starter layout.
+- Project entrypoint template `.autocast/AUTOCAST.md`.
+- Project `config.yml` and `lock.yml` templates.
+- Project state templates for project context, tasks, evidence, decisions, and backlog.
+- v0.10 canonical layout route calibration eval suite.
+- v0.10 canonical layout benchmark report.
+- npm script for canonical layout evals.
+
+### Changed
+
+- `.gitignore` now ignores only root local `.autocast/`, allowing versioned project-layout templates.
+- README, spec, adoption, install, conformance, roadmap, config, and eval docs now describe `.autocast/core/` as the canonical framework location inside projects.
+
+## v0.9.0 - 2026-09-09
 
 ### Added
 

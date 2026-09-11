@@ -7,7 +7,7 @@
 Torne agentes de código com IA previsíveis, seguros, revisáveis e repetíveis.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.9%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.10%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#suporte-a-ferramentas)
 
@@ -138,36 +138,64 @@ Escolha o caminho que combina com seu fluxo.
 ### Caminho A: Adicionar AutoCast Ao Projeto
 
 ```bash
-git clone https://github.com/FledsonChagas/AutoCast.git autocast
+git clone https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Depois crie os arquivos `.autocast/` que pertencem ao projeto a partir de:
+
+```txt
+.autocast/core/templates/project-layout/.autocast/
 ```
 
 Depois comece por:
 
 ```txt
-autocast/workflows/autocast-run.md
+.autocast/AUTOCAST.md
 ```
+
+## Layout Canônico Do Projeto
+
+AutoCast vive dentro de cada projeto por meio de `.autocast/`.
+
+```txt
+.autocast/core/ = framework AutoCast, clonado ou adicionado como submodule
+.autocast/*     = estado, evidências, tarefas, decisões e backlog do projeto
+```
+
+Recomendado:
+
+```bash
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Use `.autocast/core/templates/project-layout/.autocast/` como starter layout do projeto depois de adicionar AutoCast ao projeto.
+
+Veja `CANONICAL_LAYOUT.pt-BR.md` e `PROJECT_LAYOUT.pt-BR.md`.
 
 ### Caminho B: Usar AutoCast Como Git Submodule
 
 ```bash
-git submodule add https://github.com/FledsonChagas/AutoCast.git autocast
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
 git submodule update --init --recursive
 ```
 
 Útil quando você quer manter AutoCast versionado separadamente do código da aplicação.
+
+Depois de adicionar o submodule, crie os arquivos `.autocast/` do projeto a partir de `.autocast/core/templates/project-layout/.autocast/`.
 
 ### Caminho C: Usar AutoCast Como Padrão De IA Do Projeto
 
 Copie ou referencie estes arquivos nas instruções do projeto:
 
 ```txt
-autocast/SPEC.pt-BR.md
-autocast/METHODOLOGY.pt-BR.md
-autocast/MANUAL.md
-autocast/prompts/autocast-orchestrator.md
-autocast/workflows/autocast-run.md
-autocast/router/decision-matrix.md
-autocast/security/security-baseline.md
+.autocast/AUTOCAST.md
+.autocast/core/SPEC.pt-BR.md
+.autocast/core/METHODOLOGY.pt-BR.md
+.autocast/core/MANUAL.md
+.autocast/core/prompts/autocast-orchestrator.md
+.autocast/core/workflows/autocast-run.md
+.autocast/core/router/decision-matrix.md
+.autocast/core/security/security-baseline.md
 ```
 
 ## Tooling De Referência
@@ -189,11 +217,11 @@ Use este prompt com seu agente de código:
 ```md
 Use AutoCast para esta tarefa.
 
-Comece em `autocast/workflows/autocast-run.md`.
+Comece em `.autocast/AUTOCAST.md`.
 Faça apenas perguntas mínimas e bloqueantes.
 Crie um task brief.
-Selecione a rota usando `autocast/router/decision-matrix.md`.
-Aplique `autocast/security/security-baseline.md`.
+Selecione a rota usando `.autocast/core/router/decision-matrix.md`.
+Aplique `.autocast/core/security/security-baseline.md`.
 Implemente somente se a rota permitir mudanças de código.
 Rode os juízes exigidos antes de finalizar.
 
@@ -233,6 +261,8 @@ Comece por `SECURITY.md`, `PROFILES.pt-BR.md`, `security/security-baseline.md`, 
 
 | Documento | Propósito |
 |---|---|
+| `CANONICAL_LAYOUT.md` / `CANONICAL_LAYOUT.pt-BR.md` | Layout canônico `.autocast/` do projeto |
+| `PROJECT_LAYOUT.md` / `PROJECT_LAYOUT.pt-BR.md` | Arquivos do projeto e política de commit |
 | `SPEC.md` / `SPEC.pt-BR.md` | Especificação do framework standard AutoCast |
 | `METHODOLOGY.md` / `METHODOLOGY.pt-BR.md` | Metodologia de desenvolvimento |
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | Modelo de conformidade L0-L5 |
@@ -272,7 +302,7 @@ AutoCast mira definir esse padrão.
 
 ## Status
 
-AutoCast está em evolução. Na `v0.9`, o foco é prontidão pública e governança antes de qualquer decisão de v1.0.
+AutoCast está em evolução. Na `v0.10`, o foco é formalizar o layout canônico `.autocast/` antes dos pilotos para v1.0.
 
 ## Licença
 

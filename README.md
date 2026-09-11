@@ -7,7 +7,7 @@
 Make AI coding agents predictable, secure, reviewable, and repeatable.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0.9%20candidate-orange.svg)](ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-v0.10%20candidate-orange.svg)](ROADMAP.md)
 [![Security](https://img.shields.io/badge/security-OWASP%20%7C%20NIST%20%7C%20CIS-green.svg)](SECURITY.md)
 [![Tools](https://img.shields.io/badge/tools-OpenCode%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)](#tool-support)
 
@@ -138,46 +138,76 @@ Choose the path that fits your workflow.
 ### Path A: Add AutoCast To A Project
 
 ```bash
-git clone https://github.com/FledsonChagas/AutoCast.git autocast
+git clone https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Then create the project-owned `.autocast/` files from:
+
+```txt
+.autocast/core/templates/project-layout/.autocast/
 ```
 
 Then start from:
 
 ```txt
-autocast/workflows/autocast-run.md
+.autocast/AUTOCAST.md
 ```
 
 ### Path B: Use AutoCast As A Git Submodule
 
 ```bash
-git submodule add https://github.com/FledsonChagas/AutoCast.git autocast
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
 git submodule update --init --recursive
 ```
 
 This is useful when you want to keep AutoCast versioned separately from your application code.
+
+After adding the submodule, create the project-owned `.autocast/` files from `.autocast/core/templates/project-layout/.autocast/`.
 
 ### Path C: Use AutoCast As A Project AI Standard
 
 Copy or reference these files from your project instructions:
 
 ```txt
-autocast/MANUAL.md
-autocast/prompts/autocast-orchestrator.md
-autocast/workflows/autocast-run.md
-autocast/router/decision-matrix.md
-autocast/security/security-baseline.md
+.autocast/AUTOCAST.md
+.autocast/core/MANUAL.md
+.autocast/core/prompts/autocast-orchestrator.md
+.autocast/core/workflows/autocast-run.md
+.autocast/core/router/decision-matrix.md
+.autocast/core/security/security-baseline.md
 ```
 
 ## Quick Start
 
-1. Add AutoCast to your project as `autocast/` or `.ai/autocast/`.
-2. Fill `context/project-brief.md`.
-3. Fill `context/engineering-standards.md`.
-4. Start every AI coding task with `workflows/autocast-run.md`.
-5. Let the router choose the route.
-6. Run the selected workflow.
-7. Run the required judges.
-8. Record evidence before considering the task complete.
+1. Add AutoCast to your project under `.autocast/core/`.
+2. Add project state under `.autocast/project/`, `.autocast/tasks/`, `.autocast/evidence/`, `.autocast/decisions/`, and `.autocast/backlog/`.
+3. Fill `.autocast/project/project-brief.md`.
+4. Fill `.autocast/project/engineering-standards.md`.
+5. Start every AI coding task from `.autocast/AUTOCAST.md`.
+6. Use `.autocast/core/workflows/autocast-run.md` as the framework workflow.
+7. Let the router choose the route.
+8. Run the selected workflow.
+9. Run the required judges.
+10. Record evidence before considering the task complete.
+
+## Canonical Project Layout
+
+AutoCast lives inside each project through `.autocast/`.
+
+```txt
+.autocast/core/ = the AutoCast framework, cloned or added as a submodule
+.autocast/*     = project-specific AutoCast state, evidence, tasks, decisions, and backlog
+```
+
+Recommended:
+
+```bash
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Use `.autocast/core/templates/project-layout/.autocast/` as the starter project layout after adding AutoCast to a project.
+
+See `CANONICAL_LAYOUT.md` and `PROJECT_LAYOUT.md`.
 
 ## Reference Tooling
 
@@ -198,11 +228,11 @@ Use this prompt with your coding agent:
 ```md
 Use AutoCast for this task.
 
-Start at `autocast/workflows/autocast-run.md`.
+Start at `.autocast/AUTOCAST.md`.
 Ask only the minimum blocking intake questions.
 Create a task brief.
-Select the route using `autocast/router/decision-matrix.md`.
-Apply `autocast/security/security-baseline.md`.
+Select the route using `.autocast/core/router/decision-matrix.md`.
+Apply `.autocast/core/security/security-baseline.md`.
 Implement only if the selected route allows code changes.
 Run the required judges before finalizing.
 
@@ -299,6 +329,10 @@ Required controls:
 AutoCast/
   README.md
   README.pt-BR.md
+  CANONICAL_LAYOUT.md
+  CANONICAL_LAYOUT.pt-BR.md
+  PROJECT_LAYOUT.md
+  PROJECT_LAYOUT.pt-BR.md
   SPEC.md
   SPEC.pt-BR.md
   METHODOLOGY.md
@@ -355,6 +389,8 @@ AutoCast/
 
 | Document | Purpose |
 |---|---|
+| `CANONICAL_LAYOUT.md` / `CANONICAL_LAYOUT.pt-BR.md` | Canonical `.autocast/` project layout |
+| `PROJECT_LAYOUT.md` / `PROJECT_LAYOUT.pt-BR.md` | Project-owned files and commit policy |
 | `SPEC.md` / `SPEC.pt-BR.md` | AutoCast framework standard specification |
 | `METHODOLOGY.md` / `METHODOLOGY.pt-BR.md` | Development methodology |
 | `CONFORMANCE.md` / `CONFORMANCE.pt-BR.md` | L0-L5 conformance model |
@@ -413,18 +449,17 @@ The conclusion:
 
 ## Roadmap
 
-Current status: `v0.9` candidate on the public-readiness and governance track.
+Current status: `v0.10` candidate on the canonical project layout track.
 
-Near target: open source public-readiness before any v1.0 decision.
+Near target: stable `.autocast/` adoption structure before v1.0 pilots.
 
-The v0.9 plan focuses on:
+The v0.10 plan focuses on:
 
-- Contribution guidelines.
-- Governance model.
-- Claims policy.
-- Release checklist.
-- v1.0 readiness criteria.
-- GitHub issue and PR templates.
+- Canonical `.autocast/` directory structure.
+- `.autocast/core/` as framework source.
+- Project-owned state outside `core/`.
+- Starter project layout template.
+- Config and lock files for pinned AutoCast adoption.
 
 See `ROADMAP.md` and `roadmap/post-v0.3-market-hardening.md`.
 

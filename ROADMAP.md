@@ -1,8 +1,8 @@
 # AutoCast Roadmap
 
-AutoCast is currently moving from `v0.8` into the `v0.9` public-readiness and governance track.
+AutoCast is currently moving from `v0.9` into the `v0.10` canonical project layout track.
 
-The next target is `v0.9`: public-readiness and governance before any v1.0 decision.
+The next target is `v0.10`: the canonical `.autocast/` project layout before real pilots and any v1.0 decision.
 
 ## Direction
 
@@ -34,6 +34,7 @@ It should avoid becoming an unfocused generic runtime too early.
 | `v0.7` | Reference adapters | Adapter conformance, limitations matrix, profile references, invocation prompts, setup docs |
 | `v0.8` | Adoption evidence | Evidence policy, adoption metrics, pilot guide, case study templates, realistic samples |
 | `v0.9` | Public readiness | Contribution guide, governance, claims policy, release checklist, v1.0 readiness, issue/PR templates |
+| `v0.10` | Canonical project layout | `.autocast/core` framework source, project-owned state outside core, starter template, lock/config |
 
 ## v0.2 Goals
 
@@ -110,6 +111,16 @@ It should avoid becoming an unfocused generic runtime too early.
 - Add release checklist.
 - Add v1.0 readiness criteria.
 - Add GitHub issue and PR templates.
+
+## v0.10 Goals
+
+- Define the canonical `.autocast/` project layout.
+- Define `.autocast/core/` as the framework source path.
+- Keep project-specific state outside `core/`.
+- Add `.autocast/AUTOCAST.md` project entrypoint template.
+- Add `config.yml` and `lock.yml` templates for project adoption.
+- Add project state templates for project context, tasks, evidence, decisions, and backlog.
+- Update spec, adoption, install, and conformance docs to make the layout official.
 
 ## Success Metrics
 

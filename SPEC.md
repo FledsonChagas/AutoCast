@@ -23,6 +23,7 @@ AutoCast is a standard made of:
 - evidence requirements
 - official adapters for real developer tools
 - optional reference tooling
+- canonical `.autocast/` project layout
 
 ## Canonical Loop
 
@@ -36,6 +37,10 @@ Every AutoCast-compliant task must pass through these conceptual phases, even wh
 
 An AutoCast project should define or reference:
 
+- `.autocast/AUTOCAST.md`
+- `.autocast/config.yml`
+- `.autocast/lock.yml`
+- `.autocast/core/` for the pinned framework
 - project context
 - engineering standards
 - task brief template
@@ -45,6 +50,17 @@ An AutoCast project should define or reference:
 - judge rubrics
 - security baseline
 - evidence template
+
+## Canonical Project Layout
+
+AutoCast-compliant projects should use `.autocast/` as the project-local AutoCast layer.
+
+```txt
+.autocast/core/ = AutoCast framework source
+.autocast/*     = project-specific state
+```
+
+Project-specific state includes project context, task briefs, evidence, decisions, and backlog. These files must not be mixed into `.autocast/core/`.
 
 ## Official Routes
 

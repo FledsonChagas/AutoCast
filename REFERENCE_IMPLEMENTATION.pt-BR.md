@@ -18,6 +18,7 @@ A CLI atual é `bin/autocast.mjs`.
 
 Ela suporta:
 
+- criação do layout canônico `.autocast/` do projeto
 - classificação de rotas
 - scoring de evals
 - geração de relatórios
@@ -37,6 +38,7 @@ A CLI é útil como validador de referência porque torna partes do padrão mens
 
 Ela ajuda a responder:
 
+- Conseguimos criar o layout canônico `.autocast/` do projeto?
 - O router classificou esta tarefa corretamente?
 - Os evals continuam passando?
 - Conseguimos gerar um relatório local de evidência?

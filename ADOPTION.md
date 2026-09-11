@@ -26,7 +26,32 @@ Start with:
 
 ## 2. Project Standard Adoption
 
-Add AutoCast to the repository as `autocast/` or `.ai/autocast/`.
+Add AutoCast to the repository using the canonical `.autocast/` layout.
+
+Recommended:
+
+```bash
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Then create project-owned state outside `core/`:
+
+```txt
+.autocast/AUTOCAST.md
+.autocast/config.yml
+.autocast/lock.yml
+.autocast/project/
+.autocast/tasks/
+.autocast/evidence/
+.autocast/decisions/
+.autocast/backlog/
+```
+
+Use the starter template from:
+
+```txt
+.autocast/core/templates/project-layout/.autocast/
+```
 
 Require AI-assisted tasks to produce:
 

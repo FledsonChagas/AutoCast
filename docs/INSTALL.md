@@ -2,18 +2,27 @@
 
 AutoCast can be used as a framework standard, a project harness, or with optional reference tooling.
 
-## Option 1: Project Folder
+The canonical project layout is `.autocast/`.
+
+## Option 1: Canonical Project Layout
 
 ```bash
-git clone https://github.com/FledsonChagas/AutoCast.git autocast
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
 ```
 
-## Option 2: Git Submodule
+Then copy or create project-owned files from:
+
+```txt
+.autocast/core/templates/project-layout/.autocast/
+```
+
+## Option 2: Clone Instead Of Submodule
 
 ```bash
-git submodule add https://github.com/FledsonChagas/AutoCast.git autocast
-git submodule update --init --recursive
+git clone https://github.com/FledsonChagas/AutoCast.git .autocast/core
 ```
+
+Then copy or create project-owned files from `.autocast/core/templates/project-layout/.autocast/`.
 
 ## Option 3: Optional Reference Runner
 

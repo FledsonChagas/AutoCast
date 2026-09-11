@@ -27,6 +27,7 @@
 - [ ] `npm run eval:security-assurance`
 - [ ] `npm run eval:adapter-conformance`
 - [ ] `npm run eval:adoption-evidence`
+- [ ] `npm run eval:canonical-layout`
 - [ ] `node --check bin/autocast.mjs`
 
 ## Claim/Evidence Label

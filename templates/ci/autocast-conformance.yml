@@ -38,5 +38,8 @@ jobs:
       - name: Adoption evidence evals
         run: npm run eval:adoption-evidence
 
+      - name: Canonical layout evals
+        run: npm run eval:canonical-layout
+
       - name: Runner syntax
         run: node --check bin/autocast.mjs
