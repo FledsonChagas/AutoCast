@@ -15,13 +15,13 @@ The CLI is not required for AutoCast conformance. AutoCast is a framework standa
 
 ## `autocast init`
 
-Creates local `.autocast/` working files and `autocast.config.yml` if missing.
+Creates the canonical project-owned `.autocast/` layout if files are missing.
 
 ```bash
 node bin/autocast.mjs init
 ```
 
-Generated files are local working artifacts and are ignored by git by default when placed under `.autocast/`.
+Generated files are project-owned AutoCast state. Review them before committing, and do not place project-specific state inside `.autocast/core/`.
 
 ## `autocast route`
 

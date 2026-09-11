@@ -26,7 +26,32 @@ Comece por:
 
 ## 2. Adoção Como Padrão Do Projeto
 
-Adicione AutoCast ao repositório como `autocast/` ou `.ai/autocast/`.
+Adicione AutoCast ao repositório usando o layout canônico `.autocast/`.
+
+Recomendado:
+
+```bash
+git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core
+```
+
+Depois crie o estado do projeto fora de `core/`:
+
+```txt
+.autocast/AUTOCAST.md
+.autocast/config.yml
+.autocast/lock.yml
+.autocast/project/
+.autocast/tasks/
+.autocast/evidence/
+.autocast/decisions/
+.autocast/backlog/
+```
+
+Use o template inicial de:
+
+```txt
+.autocast/core/templates/project-layout/.autocast/
+```
 
 Exija que tarefas assistidas por IA produzam:
 

@@ -17,6 +17,7 @@ npm run eval:false-negative
 npm run eval:security-assurance
 npm run eval:adapter-conformance
 npm run eval:adoption-evidence
+npm run eval:canonical-layout
 node --check bin/autocast.mjs
 ```
 
@@ -29,6 +30,7 @@ false-negative suite:
 security-assurance suite:
 adapter-conformance suite:
 adoption-evidence suite:
+canonical-layout suite:
 ```
 
 ## Limitations

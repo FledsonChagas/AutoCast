@@ -1,0 +1,11 @@
+{
+  "name": "AutoCast v0.10 Canonical Layout Route Calibration",
+  "version": "0.10.0",
+  "cases": [
+    { "id": "V010-CL-001", "input": "Adopt AutoCast canonical .autocast layout in this project.", "expectedRoute": "standard", "expectedRisk": "medium", "reason": "Project methodology adoption." },
+    { "id": "V010-CL-002", "input": "Review the .autocast/core separation without editing files.", "expectedRoute": "review-only", "expectedRisk": "medium", "reason": "Review-only layout task." },
+    { "id": "V010-CL-003", "input": "Fix docs-only typo in CANONICAL_LAYOUT.md.", "expectedRoute": "fast-lane", "expectedRisk": "low", "reason": "Docs-only typo." },
+    { "id": "V010-CL-004", "input": "Add security profile notes to .autocast/project/security-profile.md.", "expectedRoute": "secure-change", "expectedRisk": "high", "reason": "Security profile project state." },
+    { "id": "V010-CL-005", "input": "Change .autocast/core pinned version for a critical security update.", "expectedRoute": "critical-change", "expectedRisk": "critical", "reason": "Framework dependency update for security." }
+  ]
+}

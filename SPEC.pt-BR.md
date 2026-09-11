@@ -23,6 +23,7 @@ AutoCast é um padrão composto por:
 - requisitos de evidência
 - adapters oficiais para ferramentas reais de desenvolvimento
 - tooling de referência opcional
+- layout canônico `.autocast/` do projeto
 
 ## Loop Canônico
 
@@ -36,6 +37,10 @@ Toda tarefa compatível com AutoCast deve passar por essas fases conceituais, me
 
 Um projeto AutoCast deve definir ou referenciar:
 
+- `.autocast/AUTOCAST.md`
+- `.autocast/config.yml`
+- `.autocast/lock.yml`
+- `.autocast/core/` para o framework pinado
 - contexto do projeto
 - padrões de engenharia
 - template de task brief
@@ -45,6 +50,17 @@ Um projeto AutoCast deve definir ou referenciar:
 - rubricas dos juízes
 - baseline de segurança
 - template de evidência
+
+## Layout Canônico Do Projeto
+
+Projetos compatíveis com AutoCast devem usar `.autocast/` como camada local AutoCast do projeto.
+
+```txt
+.autocast/core/ = fonte do framework AutoCast
+.autocast/*     = estado específico do projeto
+```
+
+Estado específico do projeto inclui contexto, task briefs, evidências, decisões e backlog. Esses arquivos não devem ser misturados em `.autocast/core/`.
 
 ## Rotas Oficiais
 

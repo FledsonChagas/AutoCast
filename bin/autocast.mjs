@@ -47,6 +47,7 @@ const CRITICAL_PATTERNS = [
   ['cloud permission widening', /\b(iam|cloud role|service role|s3 bucket|wildcard permission|admin role)\b/],
   ['cryptography', /\b(cryptography|crypto|encryption|decrypt|private key|signing key)\b/],
   ['compliance', /\b(compliance|regulated|audit logging for admin|audit log for admin)\b/],
+  ['critical framework security update', /\b(critical security update|pinned version for a critical security|framework dependency update for security)\b/],
 ];
 
 const SECURE_PATTERNS = [
@@ -58,6 +59,7 @@ const SECURE_PATTERNS = [
   ['secret exposure attempt', /\b(environment variables|print environment|env variables|credential files)\b/],
   ['personal data', /\b(personal data|pii|sensitive data|customer pii|request body with pii)\b/],
   ['logging security', /\b(log secrets|logging secrets|sensitive logs|full request body)\b/],
+  ['security profile project state', /\b(security profile|security-profile\.md|secure profile notes)\b/],
 ];
 
 const FAST_PATTERNS = [
@@ -257,21 +259,22 @@ function copyTemplate(template, output) {
   return true;
 }
 
+function copyDirectoryTemplate(source, target, created) {
+  for (const entry of fs.readdirSync(source, { withFileTypes: true })) {
+    const sourcePath = path.join(source, entry.name);
+    const targetPath = path.join(target, entry.name);
+    if (entry.isDirectory()) {
+      copyDirectoryTemplate(sourcePath, targetPath, created);
+    } else if (copyTemplate(sourcePath, targetPath)) {
+      created.push(targetPath);
+    }
+  }
+}
+
 function initHarness() {
   const target = path.resolve(process.cwd(), '.autocast');
   const created = [];
-  const mappings = [
-    ['templates/task-brief.md', 'task-brief.md'],
-    ['templates/evidence-log.md', 'evidence-log.md'],
-    ['templates/run-summary.md', 'run-summary.md'],
-    ['templates/security-evidence-report.md', 'security-evidence-report.md'],
-  ];
-  for (const [from, to] of mappings) {
-    const output = path.join(target, to);
-    if (copyTemplate(path.join(ROOT, from), output)) created.push(output);
-  }
-  const configOutput = path.resolve(process.cwd(), 'autocast.config.yml');
-  if (copyTemplate(path.join(ROOT, 'autocast.config.example.yml'), configOutput)) created.push(configOutput);
+  copyDirectoryTemplate(path.join(ROOT, 'templates/project-layout/.autocast'), target, created);
   return { target, created };
 }
 
@@ -301,7 +304,7 @@ function reportMarkdown(evalResult) {
 }
 
 function usage() {
-  console.log(`AutoCast v0.3 local runner
+  console.log(`AutoCast v0.10 reference runner
 
 Usage:
   autocast init

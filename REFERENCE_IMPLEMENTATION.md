@@ -18,6 +18,7 @@ The current CLI is `bin/autocast.mjs`.
 
 It supports:
 
+- canonical `.autocast/` project layout setup
 - route classification
 - eval scoring
 - report generation
@@ -37,6 +38,7 @@ The CLI is useful as a reference validator because it makes parts of the standar
 
 It helps answer:
 
+- Can we create the canonical project-owned `.autocast/` layout?
 - Did the router classify this task correctly?
 - Do evals still pass?
 - Can we generate a local evidence report?

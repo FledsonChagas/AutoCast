@@ -10,26 +10,27 @@ The goal is not bureaucracy. The goal is shared language and measurable adoption
 |---|---|---|
 | L0 | Prompt Pack | Uses AutoCast prompts or documents informally |
 | L1 | AutoCast Structured | Uses task briefs, routes, workflows, and basic judges |
-| L2 | AutoCast Compliant | Follows the canonical loop and records evidence for non-trivial work |
+| L2 | AutoCast Compliant | Follows the canonical loop, uses `.autocast/`, and records evidence for non-trivial work |
 | L3 | AutoCast Secure | Applies secure-by-default profiles and security judges for sensitive work |
 | L4 | AutoCast Verified | Runs evals, tracks judge quality, and validates route decisions |
 | L5 | AutoCast Certified | Independently reviewed, benchmarked, and governed in a repeatable process |
 
 ## Current AutoCast Repository Maturity
 
-AutoCast v0.9 candidate is approximately:
+AutoCast v0.10 candidate is approximately:
 
 ```txt
 L3: AutoCast Secure
 ```
 
-It has route definitions, workflows, judges, evidence templates, security baseline, official adapters, framework specification documents, profiles, conformance checklists, security assurance pack, adapter conformance docs, adoption evidence methodology, realistic samples, governance docs, and initial eval suites.
+It has route definitions, workflows, judges, evidence templates, security baseline, official adapters, framework specification documents, profiles, conformance checklists, canonical `.autocast/` project layout, security assurance pack, adapter conformance docs, adoption evidence methodology, realistic samples, governance docs, and initial eval suites.
 
-It has partial L4 signals because route, false-positive/false-negative, security assurance, adapter conformance, and adoption evidence evals exist, but it is not yet fully L4/L5 because external validation, broad real-world adoption evidence, judge automation, and independent certification do not exist yet.
+It has partial L4 signals because route, false-positive/false-negative, security assurance, adapter conformance, adoption evidence, and canonical layout evals exist, but it is not yet fully L4/L5 because external validation, broad real-world adoption evidence, judge automation, and independent certification do not exist yet.
 
 ## Minimum L2 Requirements
 
 - Use the canonical AutoCast loop.
+- Use the canonical `.autocast/` layout or document an equivalent mapping.
 - Classify work into an official route.
 - Use a task brief for non-trivial work.
 - Apply the security baseline.

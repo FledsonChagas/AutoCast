@@ -1,5 +1,5 @@
 name: AutoCast
-version: 0.9.0
+version: 0.10.0
 
 defaults:
   language: auto
@@ -15,6 +15,9 @@ framework:
   type: framework-standard
   methodology_first: true
   cli_required_for_conformance: false
+  canonical_project_layout: .autocast
+  canonical_core_path: .autocast/core
+  project_state_outside_core: true
   official_adapters:
     - opencode
     - claude-code
@@ -129,4 +132,5 @@ runner:
     - evals/v0.6/security-assurance.json
     - evals/v0.7/adapter-conformance.json
     - evals/v0.8/adoption-evidence.json
+    - evals/v0.10/canonical-layout.json
   local_evidence_dir: .autocast
