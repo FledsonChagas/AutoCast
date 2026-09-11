@@ -172,6 +172,57 @@ Use `.autocast/core/templates/project-layout/.autocast/` como starter layout do 
 
 Veja `CANONICAL_LAYOUT.pt-BR.md` e `PROJECT_LAYOUT.pt-BR.md`.
 
+## Prompt Bootstrap Para Agentes
+
+Cole este prompt no OpenCode, Claude Code, Cursor ou outro agente de código enquanto ele estiver rodando na raiz do seu projeto.
+
+```md
+Adote AutoCast neste repositório.
+
+Repositório AutoCast:
+https://github.com/FledsonChagas/AutoCast.git
+
+Layout canônico:
+- `.autocast/core/` é a fonte do framework AutoCast.
+- `.autocast/` fora de `core/` é estado específico do projeto.
+
+Regras:
+- Não sobrescreva arquivos existentes do projeto sem preservar conteúdo do usuário.
+- Não coloque evidências, task briefs, backlog ou decisões do projeto dentro de `.autocast/core/`.
+- Prefira git submodule para `.autocast/core/` quando este repositório usar git.
+- Se submodule não for apropriado, clone AutoCast em `.autocast/core/`.
+- Mantenha a CLI AutoCast como opcional; use apenas como tooling de referência.
+- Aplique comportamento secure-by-default.
+
+Passos:
+1. Inspecione a raiz do repositório e confirme se `.autocast/` já existe.
+2. Se `.autocast/core/` não existir, adicione AutoCast ali:
+   `git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core`
+   Se submodule falhar ou não for desejado, use:
+   `git clone https://github.com/FledsonChagas/AutoCast.git .autocast/core`
+3. Crie o layout do projeto rodando:
+   `node .autocast/core/bin/autocast.mjs init`
+   Se Node não estiver disponível, crie os arquivos a partir de `.autocast/core/templates/project-layout/.autocast/`.
+4. Atualize `.autocast/lock.yml` com a versão AutoCast e o commit pinado de `.autocast/core`.
+5. Atualize `.autocast/config.yml` com nome do projeto, perfil padrão e adapters oficiais usados por este projeto.
+6. Preencha `.autocast/project/project-brief.md` e `.autocast/project/engineering-standards.md` com contexto best-effort. Marque desconhecidos como TODO.
+7. Configure adapters oficiais quando relevante:
+   OpenCode: use `.autocast/core/adapters/opencode/` e copie agentes para `.opencode/agent/` ou `.opencode/agents/` se o projeto usa OpenCode.
+   Claude Code: adicione uma seção AutoCast ao `CLAUDE.md` apontando para `.autocast/AUTOCAST.md` se o projeto usa Claude Code.
+   Cursor: copie `.autocast/core/adapters/cursor/rules/autocast.mdc` para `.cursor/rules/autocast.mdc` se o projeto usa Cursor.
+8. Rode checks de referência quando possível:
+   `node .autocast/core/bin/autocast.mjs route --task "Adotar layout canônico AutoCast"`
+9. Reporte o que foi criado, o que foi pulado, quais adapters foram configurados e o que precisa de confirmação humana.
+
+Saída:
+- arquivos criados ou atualizados
+- fonte do AutoCast core e commit pinado
+- perfil padrão selecionado
+- adapters configurados
+- passos pulados e motivos
+- próxima tarefa AutoCast recomendada
+```
+
 ### Caminho B: Usar AutoCast Como Git Submodule
 
 ```bash

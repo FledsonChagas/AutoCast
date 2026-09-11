@@ -209,6 +209,57 @@ Use `.autocast/core/templates/project-layout/.autocast/` as the starter project 
 
 See `CANONICAL_LAYOUT.md` and `PROJECT_LAYOUT.md`.
 
+## Agent Bootstrap Prompt
+
+Paste this prompt into OpenCode, Claude Code, Cursor, or another coding agent while it is running from your project root.
+
+```md
+Adopt AutoCast in this repository.
+
+AutoCast repository:
+https://github.com/FledsonChagas/AutoCast.git
+
+Canonical layout:
+- `.autocast/core/` is the AutoCast framework source.
+- `.autocast/` outside `core/` is project-specific state.
+
+Rules:
+- Do not overwrite existing project files without preserving user content.
+- Do not put project evidence, task briefs, backlog, or decisions inside `.autocast/core/`.
+- Prefer git submodule for `.autocast/core/` when this repository uses git.
+- If submodule is not appropriate, clone AutoCast into `.autocast/core/`.
+- Keep the AutoCast CLI optional; use it only as reference tooling.
+- Apply secure-by-default behavior.
+
+Steps:
+1. Inspect the repository root and confirm whether `.autocast/` already exists.
+2. If `.autocast/core/` does not exist, add AutoCast there:
+   `git submodule add https://github.com/FledsonChagas/AutoCast.git .autocast/core`
+   If submodule fails or is not desired, use:
+   `git clone https://github.com/FledsonChagas/AutoCast.git .autocast/core`
+3. Create project-owned layout by running:
+   `node .autocast/core/bin/autocast.mjs init`
+   If Node is unavailable, create files from `.autocast/core/templates/project-layout/.autocast/`.
+4. Update `.autocast/lock.yml` with the AutoCast version and pinned commit from `.autocast/core`.
+5. Update `.autocast/config.yml` with project name, default profile, and official adapters used by this project.
+6. Fill `.autocast/project/project-brief.md` and `.autocast/project/engineering-standards.md` with best-effort project context. Mark unknowns as TODO.
+7. Configure official adapters when relevant:
+   OpenCode: use `.autocast/core/adapters/opencode/` and copy agent files into `.opencode/agent/` or `.opencode/agents/` if the project uses OpenCode.
+   Claude Code: add an AutoCast section to `CLAUDE.md` that points to `.autocast/AUTOCAST.md` if the project uses Claude Code.
+   Cursor: copy `.autocast/core/adapters/cursor/rules/autocast.mdc` into `.cursor/rules/autocast.mdc` if the project uses Cursor.
+8. Run reference checks when possible:
+   `node .autocast/core/bin/autocast.mjs route --task "Adopt AutoCast canonical layout"`
+9. Report what was created, what was skipped, which adapters were configured, and what needs human confirmation.
+
+Output:
+- files created or updated
+- AutoCast core source and pinned commit
+- selected default profile
+- adapters configured
+- skipped steps and reasons
+- next recommended AutoCast task
+```
+
 ## Reference Tooling
 
 AutoCast includes an optional dependency-free local runner as a reference validator.
